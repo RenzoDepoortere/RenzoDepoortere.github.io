@@ -20,13 +20,22 @@
             font-family: 'Inter', sans-serif;
         }
 
+        body
+        {
+            background-color: #EAE7DC;
+        }
+
         .Page
         {
-            width: 100%;
+            width: 1440px;
+            min-width: 1440px;
             height: fit-content;
             display: flex;
             flex-direction: column;
             gap: 128px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         .Header
@@ -137,6 +146,7 @@
         {
             width: 420px;
             height: 420px;
+            object-fit: cover;
         }
 
         .Contacts
