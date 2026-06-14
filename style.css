@@ -1,0 +1,216 @@
+@font-face 
+{
+    font-family: 'Inter';
+    src: url("fonts/Inter-VariableFont_opsz,wght.ttf") format('truetype');
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body
+{
+    background-color: #EAE7DC;
+}
+
+.Page
+{
+    width: 1440px;
+    min-width: 1440px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Header
+{
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #CDC6A5;
+}
+
+.HeaderButtons
+{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.ContentContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.Intro
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.Profile
+{
+    width: 364px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.Profile img
+{
+    object-fit: cover;
+    object-position: top center;
+}
+
+.Description
+{
+    flex: 1;
+    align-self: stretch;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 16px;
+}
+
+.Projects
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.ProjectsContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 10px;
+}
+
+.Footer
+{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #696D7D;
+}
+
+.ProjectThumbnail
+{
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.Contacts
+{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.ContactPicture
+{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.TextMainTitle
+{
+    font-size: 48px;
+    width: fit-content;
+    height: 58px; 
+    color: black;
+    font-weight: bolder;
+}
+
+.TextHeaderButton
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 32px;
+    color: black;
+    cursor: pointer;
+}
+
+.TextHeader
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.TextSubtitle
+{
+    width: 100%;
+    height: fit-content;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.TextDescription
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.TextFooter
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
