@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Renzo Depoortere</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Page
+        {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 128px;
+        }
+
+        .Header
+        {
+            width: 100%;
+            height: 144px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 48px;
+            padding-right: 48px;
+            background-color: #CDC6A5;
+        }
+
+        .HeaderButtons
+        {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .ContentContainer
+        {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        .Intro
+        {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .Profile
+        {
+            width: 364px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .Profile img
+        {
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        .Description
+        {
+            flex: 1;
+            align-self: stretch;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 16px;
+        }
+
+        .Projects
+        {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .ProjectsContainer
+        {
+            width: 100%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            padding: 10px;
+        }
+
+        .Footer
+        {
+            width: 100%;
+            height: 125px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 48px;
+            padding-right: 48px;
+            background-color: #696D7D;
+        }
+
+        .ProjectThumbnail
+        {
+            width: 420px;
+            height: 420px;
+        }
+
+        .Contacts
+        {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .ContactPicture
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        .TextMainTitle
+        {
+            font-size: 48px;
+            width: fit-content;
+            height: 58px; 
+            color: black;
+            font-weight: bold;
+        }
+
+        .TextHeaderButton
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 32px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .TextHeader
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 40px;
+            text-align: left;
+            color: black;
+        }
+
+        .TextSubtitle
+        {
+            width: 100%;
+            height: fit-content;
+            font-size: 36px;
+            text-align: center;
+            color: black;
+        }
+
+        .TextDescription
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 24px;
+            text-align: center;
+            color: black;
+        }
+
+        .TextFooter
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Page">
+        <div class="Header">
+            <p class="TextMainTitle">Portfolio</p>
+            <div class="HeaderButtons">
+                <p class="TextHeaderButton">Home</p>
+                <p class="TextHeaderButton">About me</p>
+                <p class="TextHeaderButton">Projects</p>
+            </div>
+        </div>
+
+        <div class="ContentContainer">
+            
+            <div class = "Intro">
+                <div class = "Profile">
+                    <img src="images/ProfilePicture.jpg" alt="Picture of  Renzo" width="256px" height="256px" >
+                    <p class = "TextSubtitle">Renzo Depoortere</p>
+                    <p class = "TextDescription">Game Developer</p>
+                </div>
+                <div class="Description">
+                    <p class="TextHeader">Intro</p>
+                    <p class = TextDescription>This is very interesting text about my portfolio</p>
+                </div>
+            </div>
+
+            <div class="Projects">
+                <p class="TextSubtitle">Highlights</p>
+                <div class="ProjectsContainer">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
+                </div>
+            </div>
+        </div>
+
+        <div class="Footer">
+            <p class="TextFooter">©2026 by Renzo Depoortere</p>
+            <div class="Contacts">
+                <img class="ContactPicture" src="images/Placeholder.png" alt="Placeholder image">
+                <img class="ContactPicture" src="images/Placeholder.png" alt="Placeholder image">
+                <img class="ContactPicture" src="images/Placeholder.png" alt="Placeholder image">
+                <img class="ContactPicture" src="images/Placeholder.png" alt="Placeholder image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
