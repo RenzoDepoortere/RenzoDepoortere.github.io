@@ -222,6 +222,22 @@ body
     border-radius: 16px;
 }
 
+.SingleProjectSummary
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+}
+
+.ProjectBanner
+{
+    width: 540px;
+    height: 420px;
+    object-fit: cover;
+}
+
 .TextMainTitle
 {
     font-size: 48px;
