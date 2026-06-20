@@ -21,7 +21,7 @@ body
 {
     width: 1440px;
     min-width: 1440px;
-    height: fit-content;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 128px;
@@ -59,6 +59,7 @@ body
     height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 64px;
     padding-left: 48px;
     padding-right: 48px;
@@ -131,6 +132,7 @@ body
     justify-content: space-between;
     padding-left: 48px;
     padding-right: 48px;
+    margin-top: auto;
     background-color: #696D7D;
 }
 
@@ -138,6 +140,22 @@ body
 {
     width: 420px;
     height: 420px;
+    object-fit: cover;
+}
+
+.AboutMePictureContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.AboutMePicture
+{
+    width: 328px;
+    height: 328px;
     object-fit: cover;
 }
 
@@ -157,7 +175,13 @@ body
 {
     width: 32px;
     height: 32px;
-    cursor: pointer;
+    fill: white;
+    transition: fill 0.3s;
+}
+
+.ContactPicture:hover 
+{
+    fill: #CDC6A5; 
 }
 
 .TextMainTitle
@@ -176,6 +200,15 @@ body
     font-size: 32px;
     color: black;
     cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.TextHeaderButton:hover 
+{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 
 .TextHeader
