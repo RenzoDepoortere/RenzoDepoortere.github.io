@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me | {experience}</title>
 
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/AboutMeLoader.js" defer></script>
 </head>
 <body>
-    <div class="AMS_Page">
+    <div class="AMS_Page" id="AboutMeSingle">
         <div class="AMS_Header">
             <a href="aboutMe.html" target="_self">
                 <svg viewBox="0 0 640 640" class="AMS_CloseButton">
@@ -17,8 +18,8 @@
             </a>
         </div>
         <div class="AMS_Content">
-            <img src="images/Placeholder.png" alt="Experience picture" class="AMS_Picture">
-            <p class="TextSubtitle">Cool text about something cool</p>
+            <img src="images/Placeholder.png" alt="Experience picture" class="AMS_Picture" id="picture">
+            <p class="TextSubtitle" id="description">Cool text about something cool</p>
         </div>
     </div>
 </body>

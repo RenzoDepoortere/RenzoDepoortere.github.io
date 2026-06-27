@@ -6,9 +6,10 @@
     <title>About me | Renzo Depoortere</title>
     
     <link rel="stylesheet" href="style.css">
+    <script src="javascript/AboutMeLoader.js" defer></script>
 </head>
 <body>
-    <div class="Page">
+    <div class="Page" id="AboutMe">
        <div class="Header"> <!-- Not the cleanest way, but copying header for simplicity -->
             <p class="TextMainTitle">Portfolio</p>
             <div class="HeaderButtons">
@@ -31,7 +32,9 @@
 
             </p>
             <div class="AboutMePictureContainer">
-                <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">   <!-- Family & Friends -->
+                <a href="aboutMeSingle.html?id=FamilyFriends">
+                    <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image" id="FamilyFriends">
+                </a>
                 <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">   <!-- Bookshelf -->
                 <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">   <!-- Competitive -->
                 <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">   <!-- Traveling -->
