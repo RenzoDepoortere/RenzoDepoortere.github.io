@@ -299,6 +299,57 @@ body
     object-fit: cover;
 }
 
+.AMS_Page
+{
+    width: 1440px;
+    min-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.AMS_Header
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 24px 24px 24px 24px;
+}
+
+.AMS_CloseButton
+{
+    width: 48px;
+    height: 48px;
+    fill: black;
+}
+
+.AMS_Content
+{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px 24px 64px 24px;
+}
+
+.AMS_Picture
+{
+max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
+    max-height: 55vh; /* Won't let tall smartphone photos push text off the screen */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* GUARANTEES 100% of the image is visible, uncropped */
+}
+
 .TextMainTitle
 {
     font-size: 48px;
