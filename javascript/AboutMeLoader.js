@@ -9,12 +9,31 @@ async function init()
     else if (document.getElementById('AboutMeSingle')) fillAboutMeExperience(experiences);
 }
 
-function showExperienceThumbnails(experiences) // This can be done more dynamically
+function showExperienceThumbnails(experiences)
 {
-    document.getElementById('FamilyFriends').src = experiences.find(item => item.id == 'FamilyFriends').image;
-    document.getElementById('Nerdy').src = experiences.find(item => item.id == 'Nerdy').image;
-    document.getElementById('Competitive').src = experiences.find(item => item.id == 'Competitive').image;
-    document.getElementById('Culture').src = experiences.find(item => item.id == 'Culture').image;
+    const gridContainer = document.querySelector('.AboutMePictureContainer');
+    gridContainer.innerHTML = ''; // Empty it just in case
+
+    experiences.forEach(element => 
+    {
+        // Anchor
+        const card = document.createElement('a');
+        card.href = `aboutMeSingle.html?id=${element.id}`;
+        card.className = 'AboutMeCard';
+
+        // Build image and overlay
+        const innerHTML = 
+            `
+            <img class="AboutMePicture" src="${element.image}" alt="${element.subject}"> 
+            <div class="AboutMeOverlay"> 
+                <p class="TextAboutMeSubject">${element.subject}</p> 
+            </div>
+        `;
+        card.innerHTML = innerHTML;
+
+        // Push in grid
+        gridContainer.appendChild(card);
+    });
 }
 
 function fillAboutMeExperience(experiences)

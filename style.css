@@ -154,11 +154,55 @@ body
     gap: 10px;
 }
 
-.AboutMePicture
+.AboutMeCard 
 {
+    position: relative; /* Crucial: traps the absolute overlay inside this box */
     width: 328px;
     height: 328px;
+    display: block; /* Fixes weird inline-spacing issues with <a> tags */
+    overflow: hidden; /* Keeps the zoom effect inside the box */
+}
+
+/* When I hover the Card, change the Overlay */
+.AboutMeCard:hover .AboutMeOverlay 
+{
+    opacity: 1; /* Make the tint visible */
+}
+
+/* When I hover the Card, change the Text */
+.AboutMeCard:hover .AboutMeSubject 
+{
+    transform: translateY(0px); /* Slide the text up into dead-center */
+}
+
+/* When I hover the Card, change the Image */
+.AboutMeCard:hover .AboutMePicture 
+{
+    transform: scale(1.08); /* Slightly zoom the image in behind the tint */
+}
+
+.AboutMePicture 
+{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease; /* Prepares the image for a smooth zoom */
+}
+
+.AboutMeOverlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eae7dc79; /* 65% opaque black tint */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    
+    opacity: 0; /* Invisible by default! */
+    transition: opacity 0.3s ease; /* Fades in smoothly */
 }
 
 .Contacts
@@ -425,6 +469,15 @@ max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
     color: black;
     white-space: pre-line;  
 }
+
+.TextAboutMeSubject 
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
 
 .TextFooter
 {
