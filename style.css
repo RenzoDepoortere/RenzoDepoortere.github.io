@@ -177,7 +177,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #eae7dc79;
+    background-color: #44444179;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +237,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #eae7dc79; /* 65% opaque black tint */
+    background-color: #44444179;
     display: flex;
     align-items: center; /* Vertically centers the text */
     justify-content: center; /* Horizontally centers the text */
@@ -516,7 +516,7 @@ max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .TextAboutMeSubject 
@@ -524,7 +524,7 @@ max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 

@@ -3,9 +3,19 @@
         "id": "PaintingVR",
         "name": "Painting VR",
         "category": "professional",
-        "thumbnail": "",
-        "summary": "",
-        "contributions": "",
+        "thumbnail": "images/projects/paintingVR/PaintingVR_Banner.png",
+        "youtubeId": "h3TrGxojF_w",
+        "videoSource": "",
+        "banner": "",
+        "summary": "A cool game about painting",
+        "links":
+        [
+            {
+                "icon": "",
+                "link": ""
+            }
+        ],
+        "contributions": "I did a lot",
         "highlights":
         [
             {

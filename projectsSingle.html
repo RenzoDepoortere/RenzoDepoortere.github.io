@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{ProjectName} | Renzo Depoortere</title>    
+    <title id="Title"></title>    
 
     <link rel="stylesheet" href="style.css">
+    <script src="javascript/ProjectsLoader.js" defer></script>
 </head>
 <body>
-    <div class="Page">
+    <div class="Page" id="ProjectsSingle">
         <div class="Header"> <!-- Not the cleanest way, but copying header for simplicity -->
             <p class="TextMainTitle">Portfolio</p>
             <div class="HeaderButtons">
@@ -19,14 +20,14 @@
         </div>
 
          <div class="ContentContainer">
-            <p class="TextHeader">{ProjectName}</p>
+            <p class="TextHeader" id="ProjectName"></p>
             <div class="SingleProjectSummary">
-                <img class="ProjectBanner" src="images/Placeholder.png" alt="Placeholder image">
-                <p class="TextDescription">Interesting summary about the project</p>
+                <div id="ProjectMediaContainer"></div>
+                <p class="TextDescription", id="ProjectSummary"></p>
             </div>
             <div class="ProjectContributions">
                 <p class="TextSubtitle_Left">Contributions</p>
-                <p class="TextDescription">Description of my contributions</p>
+                <p class="TextDescription", id="Contributions"></p>
             </div>
             <div class="Separator"></div>
             <div class="Highlight">
