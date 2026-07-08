@@ -19,17 +19,17 @@
         "highlights":
         [
             {
-                "title": "",
-                "description": "",
+                "title": "My highlight",
+                "description": "Cool right?",
                 "image": ""
             }
         ],
         "variaImages":
         [
-            "",
-            "",
-            "",
-            ""
+            "images/Placeholder.png",
+            "images/Placeholder.png",
+            "images/Placeholder.png",
+            "images/Placeholder.png"
         ]
     }
 ]

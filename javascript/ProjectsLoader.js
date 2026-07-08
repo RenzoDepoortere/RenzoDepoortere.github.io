@@ -46,50 +46,102 @@ function showSingleProject(projects)
     if (currentProject == null)    
     {
         window.location.href = 'projects.html';
-        return;
     }
+    else
+    {
+        // Fill
+        document.getElementById('Title').innerText = `${currentProject.name} | Renzo Depoortere`;
+        document.getElementById('ProjectName').innerText = currentProject.name;
 
-    // Fill
-    document.getElementById('Title').innerText = `${currentProject.name} | Renzo Depoortere`;
-    document.getElementById('ProjectName').innerText = currentProject.name;
+        const mediaContainer = document.getElementById('ProjectMediaContainer');
+        if (currentProject.youtubeId) 
+        {
+            // 1. If we have a YouTube ID, build an iframe
+            mediaContainer.innerHTML = `
+                <iframe class="ProjectBannerImage" 
+                        src="https://www.youtube.com/embed/${currentProject.youtubeId}" 
+                        title="${currentProject.name} Trailer" 
+                        frameborder="0" 
+                        allowfullscreen>
+                </iframe>`;
+        } 
+        else if (currentProject.videoSource) 
+        {
+            // 2. If we have a local video file, build a video tag
+            mediaContainer.innerHTML = `
+                <video class="ProjectBannerImage" autoplay loop muted playsinline controls>
+                    <source src="${currentProject.videoSource}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>`;
+        } 
+        else 
+        {
+            // 3. Fallback to standard image if no video is available
+            mediaContainer.innerHTML = `
+                <img class="ProjectBannerImage" src="${currentProject.banner}" alt="${currentProject.name}">`;
+        }
 
-    const mediaContainer = document.getElementById('ProjectMediaContainer');
-    if (currentProject.youtubeId) 
-    {
-        // 1. If we have a YouTube ID, build an iframe
-        mediaContainer.innerHTML = `
-            <iframe class="ProjectBanner" 
-                    src="https://www.youtube.com/embed/${currentProject.youtubeId}" 
-                    title="${currentProject.name} Trailer" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>`;
-    } 
-    else if (currentProject.videoSource) 
-    {
-        // 2. If we have a local video file, build a video tag
-        mediaContainer.innerHTML = `
-            <video class="ProjectBanner" autoplay loop muted playsinline controls>
-                <source src="${currentProject.videoSource}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>`;
-    } 
-    else 
-    {
-        // 3. Fallback to standard image if no video is available
-        mediaContainer.innerHTML = `
-            <img class="ProjectBanner" src="${currentProject.banner}" alt="${currentProject.name}">`;
+        const linkContainer = document.getElementById('ProjectLinkContainer');
+        linkContainer.innerHTML = '';
+        
+        currentProject.links.forEach(element =>
+        {
+            // Create wrapper
+            const linkWrapper = document.createElement('a');
+            linkWrapper.href = `${element.link}`;
+            linkWrapper.target = "_blank";
+
+            // Built inner HTML
+            linkWrapper.innerHTML = `
+            <svg viewBox="0 0 640 640" class="ContactPicture">
+                            <path d="${element.icon}"/>
+                        </svg>
+            `;
+
+            // Push
+            linkContainer.appendChild(linkWrapper);
+        });
+
+        document.getElementById('ProjectSummary').innerText = currentProject.summary;
+        document.getElementById('Contributions').innerText = currentProject.contributions;
+
+        const highlightContainer = document.getElementById('HighlightsContainer');
+        highlightContainer.innerHTML = '';
+        
+        currentProject.highlights.forEach(element =>
+        {
+            // Create wrapper
+            const highlightDiv = document.createElement('div');
+            highlightDiv.className ='Highlight';
+
+            // Build inner HTML
+            highlightDiv.innerHTML = `
+                    <p class="TextSubtitle_Left">${element.title}</p>
+                    <div class="HighlightDescription">
+                        <p class="TextDescription_Left">${element.description}</p>
+                        <img class="HighlightImage" src="${element.image}" alt="${element.title}">
+                    </div>
+                `;
+
+            // Push
+            highlightContainer.appendChild(highlightDiv);
+        });
+
+        const variaContainer = document.getElementById('ProjectVariaContainer');
+        variaContainer.innerHTML = '';
+
+        currentProject.variaImages.forEach(element =>
+        {
+            // Create wrapper
+            const variaDiv = document.createElement('div');
+            //variaDiv.className = 'ProjectVariaContent';
+
+            // Build inner HTML
+            variaDiv.innerHTML = `
+                <img class="ProjectVariaContent" src="${element}" alt="Varia content">
+            `;
+        });
     }
-
-    document.getElementById('ProjectSummary').innerText = currentProject.summary;
-    document.getElementById('Contributions').innerText = currentProject.contributions;
-
-    // const highlightContainer = document.
-    // currentProject.highlights.forEach(element =>
-    // {
-
-    // });
 }
 
 init();
