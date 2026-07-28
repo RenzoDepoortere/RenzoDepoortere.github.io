@@ -88,12 +88,13 @@ function showSingleProject(projects)
         {
             // Create wrapper
             const linkWrapper = document.createElement('a');
+            linkWrapper.className = "SingleProjectLinkWrapper";
             linkWrapper.href = `${element.link}`;
             linkWrapper.target = "_blank";
 
             // Built inner HTML
             linkWrapper.innerHTML = `
-            <svg viewBox="0 0 640 640" class="ContactPicture">
+            <svg viewBox="0 0 640 640" class="ProjectLink">
                             <path d="${element.icon}"/>
                         </svg>
             `;

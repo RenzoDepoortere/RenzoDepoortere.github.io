@@ -328,10 +328,10 @@ body
 
 .ProjectBanner
 {
-    width: 520px;
+    width: 540px;
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -350,6 +350,25 @@ body
     flex-direction: column;
     gap: 10px;
     padding: 5px 5px 5px 5px;
+}
+
+.SingleProjectLinkWrapper
+{
+    width: 32px;
+    height: 32px;
+}
+
+.ProjectLink
+{
+    width: 32px;
+    height: 32px;
+    fill: black;
+    transition: fill 0.3s;
+}
+
+.ProjectLink:hover 
+{
+    fill: rgb(74, 74, 74); 
 }
 
 .ProjectContributions
