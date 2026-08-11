@@ -1,0 +1,110 @@
+.AboutMePictureContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.AboutMeCard 
+{
+    position: relative; /* Crucial: traps the absolute overlay inside this box */
+    width: 328px;
+    height: 328px;
+    display: block; /* Fixes weird inline-spacing issues with <a> tags */
+    overflow: hidden; /* Keeps the zoom effect inside the box */
+}
+
+/* When I hover the Card, change the Overlay */
+.AboutMeCard:hover .AboutMeOverlay 
+{
+    opacity: 1; /* Make the tint visible */
+}
+
+/* When I hover the Card, change the Text */
+.AboutMeCard:hover .TextAboutMeSubject 
+{
+    transform: translateY(0px); /* Slide the text up into dead-center */
+}
+
+/* When I hover the Card, change the Image */
+.AboutMeCard:hover .AboutMePicture 
+{
+    transform: scale(1.08); /* Slightly zoom the image in behind the tint */
+}
+
+.AboutMePicture 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease; /* Prepares the image for a smooth zoom */
+}
+
+.AboutMeOverlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #44444179;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    
+    opacity: 0; /* Invisible by default! */
+    transition: opacity 0.3s ease; /* Fades in smoothly */
+}
+
+.AMS_Page
+{
+    width: 1440px;
+    min-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.AMS_Header
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 24px 24px 24px 24px;
+}
+
+.AMS_CloseButton
+{
+    width: 48px;
+    height: 48px;
+    fill: black;
+}
+
+.AMS_Content
+{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px 24px 64px 24px;
+}
+
+.AMS_Picture
+{
+max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
+    max-height: 55vh; /* Won't let tall smartphone photos push text off the screen */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* GUARANTEES 100% of the image is visible, uncropped */
+}

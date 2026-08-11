@@ -81,26 +81,32 @@ function showSingleProject(projects)
                 <img class="ProjectBannerImage" src="${currentProject.banner}" alt="${currentProject.name}">`;
         }
 
-        const linkContainer = document.getElementById('ProjectLinkContainer');
-        linkContainer.innerHTML = '';
-        
-        currentProject.links.forEach(element =>
+        const informationBits = document.getElementById('informationBits')
+        informationBits.innerHTML = "";
+
+        currentProject.informationBits.forEach(element =>
         {
-            // Create wrapper
-            const linkWrapper = document.createElement('a');
-            linkWrapper.className = "SingleProjectLinkWrapper";
-            linkWrapper.href = `${element.link}`;
-            linkWrapper.target = "_blank";
+            const listItem = document.createElement('li');
+            listItem.className = "TextDescription_Left";
 
-            // Built inner HTML
-            linkWrapper.innerHTML = `
-            <svg viewBox="0 0 640 640" class="ProjectLink">
-                            <path d="${element.icon}"/>
-                        </svg>
-            `;
+            if (element.link)
+            {
+                // Create link
+                const linkElement = document.createElement('a');
+                linkElement.className = "";
+                linkElement.href = element.link;
+                linkElement.target = "_blank";
+                linkElement.innerText =element.text;
 
-            // Push
-            linkContainer.appendChild(linkWrapper);
+                // Push
+                listItem.appendChild(linkElement);
+            }
+            else
+            {
+                listItem.innerText = element.text;
+            }
+
+            informationBits.appendChild(listItem);
         });
 
         document.getElementById('ProjectSummary').innerText = currentProject.summary;
