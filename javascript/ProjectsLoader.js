@@ -17,8 +17,8 @@ function showHighlights(projects)
 
     // Sort by highlightNr
     const sortedProjects = projects
-        .filter(element => parseInt(element.highlightNr) != 1)
-        .sort((a, b) => parseInt(element.highlightNr) - parseInt(b.highlightNr));
+        .filter(element => parseInt(element.highlightNr) != -1)
+        .sort((a, b) => parseInt(a.highlightNr) - parseInt(b.highlightNr));
 
     sortedProjects.forEach(element =>
     {
