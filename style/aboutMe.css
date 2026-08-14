@@ -14,6 +14,7 @@
     height: 328px;
     display: block; /* Fixes weird inline-spacing issues with <a> tags */
     overflow: hidden; /* Keeps the zoom effect inside the box */
+    cursor: pointer;
 }
 
 /* When I hover the Card, change the Overlay */
@@ -58,53 +59,68 @@
     transition: opacity 0.3s ease; /* Fades in smoothly */
 }
 
-.AMS_Page
+.AboutMeModal 
 {
-    width: 1440px;
-    min-width: 1440px;
-    min-height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.AboutMeModal.show 
+{
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    opacity: 1;
 }
 
-.AMS_Header
+.AboutMeModalContent 
 {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 24px 24px 24px 24px;
-}
-
-.AMS_CloseButton
-{
-    width: 48px;
-    height: 48px;
-    fill: black;
-}
-
-.AMS_Content
-{
-    width: 100%;
-    flex: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 48px;
-    padding: 24px 24px 64px 24px;
+    gap: 32px;
+    max-width: 800px;
+    width: 90%;
 }
 
-.AMS_Picture
+.AboutMeModalClose 
 {
-max-width: 800px; /* Won't let 16:9 desktop screenshots get too wide */
-    max-height: 55vh; /* Won't let tall smartphone photos push text off the screen */
-    width: auto;
-    height: auto;
-    object-fit: contain; /* GUARANTEES 100% of the image is visible, uncropped */
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    fill: white;
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.AboutMeModalClose:hover 
+{
+    fill: #CDC6A5;
+}
+
+#ModalImage 
+{
+    max-width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.ModalText 
+{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.4;
 }

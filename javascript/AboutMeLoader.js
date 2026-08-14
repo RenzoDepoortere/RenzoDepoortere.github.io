@@ -4,9 +4,12 @@ async function init()
     const response = await fetch('data/AboutMeExperiences.json');
     const experiences = await response.json();
 
-    // Fill corresponding HTML
-    if (document.getElementById('AboutMe')) showExperienceThumbnails(experiences);
-    else if (document.getElementById('AboutMeSingle')) fillAboutMeExperience(experiences);
+    // Fill HTML
+    if (document.getElementById('AboutMe')) 
+    {
+        showExperienceThumbnails(experiences);
+        setupModal();
+    }
 }
 
 function showExperienceThumbnails(experiences)
@@ -17,8 +20,7 @@ function showExperienceThumbnails(experiences)
     experiences.forEach(element => 
     {
         // Anchor
-        const card = document.createElement('a');
-        card.href = `aboutMeSingle.html?id=${element.id}`;
+        const card = document.createElement('div');
         card.className = 'AboutMeCard';
 
         // Build image and overlay
@@ -31,8 +33,45 @@ function showExperienceThumbnails(experiences)
         `;
         card.innerHTML = innerHTML;
 
+        // On click, open the overlay
+        card.addEventListener('click', () => 
+        {
+            openModal(element.image, element.description);
+        });
+
         // Push in grid
         gridContainer.appendChild(card);
+    });
+}
+
+function openModal(imageSrc, descriptionText) 
+{
+    const modal = document.getElementById('AboutMeModal');
+    
+    // Inject the data
+    document.getElementById('ModalImage').src = imageSrc;
+    document.getElementById('ModalDescription').innerText = descriptionText;
+    
+    // Show the modal by adding the 'show' class
+    modal.classList.add('show');
+}
+
+function setupModal() 
+{
+    const modal = document.getElementById('AboutMeModal');
+    const closeBtn = document.getElementById('CloseModal');
+
+    // Close when clicking the 'X' icon
+    closeBtn.addEventListener('click', () => 
+    {
+        modal.classList.remove('show');
+    });
+
+    // Close when clicking in the dark background area (outside the image/text)
+    modal.addEventListener('click', (event) => 
+    {
+        if (event.target === modal) 
+            modal.classList.remove('show');
     });
 }
 
