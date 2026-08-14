@@ -5,8 +5,41 @@ async function init()
     const projects = await response.json();
 
     // Fill corresponding HTML
-    if (document.getElementById('Projects')) showProjects(projects);
+    if (document.getElementById('Index')) showHighlights(projects);
+    else if (document.getElementById('Projects')) showProjects(projects);
     else if (document.getElementById('ProjectsSingle')) showSingleProject(projects);
+}
+
+function showHighlights(projects)
+{
+    const projectContainer = document.getElementById('ProjectsContainer');
+    projectContainer.innerHTML = '';
+
+    // Sort by highlightNr
+    const sortedProjects = projects
+        .filter(element => parseInt(element.highlightNr) != 1)
+        .sort((a, b) => parseInt(element.highlightNr) - parseInt(b.highlightNr));
+
+    sortedProjects.forEach(element =>
+    {
+        // Anchor
+        const card = document.createElement('a');
+        card.href = `projectsSingle.html?id=${element.id}`;
+        card.className = 'ProjectCard';
+
+        // Build image and overlay
+        const innerHTML = 
+            `
+            <img class="ProjectThumbnail" src="${element.thumbnail}" alt="${element.name}"> 
+            <div class="ProjectOverlay"> 
+                <p class="TextProject">${element.name}</p> 
+            </div>
+        `;
+        card.innerHTML = innerHTML;
+
+        // Push in grid
+        projectContainer.appendChild(card);
+    });
 }
 
 function showProjects(projects)
@@ -50,6 +83,11 @@ function showSingleProject(projects)
     else
     {
         // Fill
+
+        // ================
+        // Project sumnmary
+        // ================
+        
         document.getElementById('Title').innerText = `${currentProject.name} | Renzo Depoortere`;
         document.getElementById('ProjectName').innerText = currentProject.name;
 
@@ -112,6 +150,10 @@ function showSingleProject(projects)
         document.getElementById('ProjectSummary').innerText = currentProject.summary;
         document.getElementById('Contributions').innerText = currentProject.contributions;
 
+        // ==========
+        // Highlights
+        // ==========
+
         const highlightContainer = document.getElementById('HighlightsContainer');
         highlightContainer.innerHTML = '';
         
@@ -134,6 +176,10 @@ function showSingleProject(projects)
             highlightContainer.appendChild(highlightDiv);
         });
 
+        // =====
+        // Varia
+        // =====
+
         const variaContainer = document.getElementById('ProjectVariaContainer');
         variaContainer.innerHTML = '';
 
@@ -147,6 +193,40 @@ function showSingleProject(projects)
             variaDiv.innerHTML = `
                 <img class="ProjectVariaContent" src="${element}" alt="Varia content">
             `;
+        });
+
+        // =====
+        // Modal
+        // =====
+
+        const modal = document.getElementById('ImageModal');
+        const modalImg = document.getElementById('ModalImage');
+        const closeModal = document.getElementById('ModalClose');
+
+        // Select all images you want to be clickable (Highlights and Varia)
+        const clickableImages = document.querySelectorAll('.HighlightImage, .ProjectVariaContent');
+
+        // Open modal on image click
+        clickableImages.forEach(img => 
+        {
+            img.addEventListener('click', function() 
+            {
+                modal.style.display = "flex";
+                modalImg.src = this.src; // Copy the clicked image's source into the modal
+            });
+        });
+
+        // Close modal when clicking the X button
+        closeModal.addEventListener('click', function() 
+        {
+            modal.style.display = "none";
+        });
+
+        // Close modal if the user clicks the dark background outside the image
+        modal.addEventListener('click', function(e) 
+        {
+            if (e.target === modal)
+                modal.style.display = "none";
         });
     }
 }
