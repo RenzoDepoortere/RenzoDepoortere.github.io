@@ -22,8 +22,19 @@
     justify-items: center;
     gap: 10px;
     padding: 4px 16px 4px 16px;
-    background-color: #F0DCCA;
     border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1 ease;
+}
+.SectionBackground:hover
+{
+    background-color: #e5d1be;
+}
+.SectionBackground.active
+{
+    background-color: #F0DCCA;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
 }
 
 .ProjectsContentContainer

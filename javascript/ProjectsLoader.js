@@ -6,7 +6,7 @@ async function init()
 
     // Fill corresponding HTML
     if (document.getElementById('Index')) showHighlights(projects);
-    else if (document.getElementById('Projects')) showProjects(projects);
+    else if (document.getElementById('Projects')) setFilters(projects);
     else if (document.getElementById('ProjectsSingle')) showSingleProject(projects);
 }
 
@@ -42,11 +42,38 @@ function showHighlights(projects)
     });
 }
 
+function setFilters(projects)
+{
+    // Set default category
+    const defaultCategory = "professional";
+    const initialProjects = projects.filter(p => p.category === defaultCategory);
+    showProjects(initialProjects);
+
+    // Setup buttons
+    const buttons = document.querySelectorAll('.SectionBackground');
+    buttons.forEach(button =>
+    {
+        button.addEventListener('click', () =>
+        {
+            // Set active
+            if (button.classList.contains('active')) return;
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Filter array and update
+            const categoryToFilter = button.getAttribute('data-category');
+            const filteredProjects = projects.filter(p => p.category === categoryToFilter);
+            showProjects(filteredProjects);
+        });
+    });
+}
 function showProjects(projects)
 {
     const gridContainer = document.querySelector('.ProjectsContainer');
     gridContainer.innerHTML = ''; // Empty it just in case
 
+    // Show projects
+    // -------------
     projects.forEach(element => 
     {
         // Anchor
@@ -67,6 +94,10 @@ function showProjects(projects)
         // Push in grid
         gridContainer.appendChild(card);
     });
+
+    // Set filters
+    // -----------
+   
 }
 
 function showSingleProject(projects)

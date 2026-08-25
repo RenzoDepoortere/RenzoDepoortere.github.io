@@ -59,5 +59,67 @@
             "images/Placeholder.png",
             "images/Placeholder.png"
         ]
+    },
+
+     {
+        "id": "ProjectKame",
+        "highlightNr": "1",
+        "name": "Project Kame",
+        "category": "school",
+        "thumbnail": "images/projects/projectKame/ProjectKame_Banner.png",
+        "youtubeId": "ZrZuJEyop2E",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Project Kame is the last group project I made in DAE. We were commissioned by 2 people to create a prototype of a game idea they had to potentially start their indie studio with. The game is a platformer where you try to reach the end of the level before the timer runs out. The player gets stronger every time they die by power-ups they gain after losing.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: February 2024",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 6-8 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.paintingvr.xyz/"
+            }
+        ],
+        "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system.",
+        "highlights":
+        [
+            {
+                "title": "Brush packs",
+                "description": "I developed the system behind buying in-game brush packs. These were DLC's that added a pack of new brushes to the game which you could access from your inventory.",
+                "image": ""
+            },
+            {
+                "title": "Canvas starters",
+                "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed canvas starters. These are random shapes and blobs that can be cycled through that will then be printed onto the canvas when created. The blobs were made using metaballs which I learned to use earlier in my internship.",
+                "image": ""
+            },
+            {
+                "title": "Paint bucket metaballs",
+                "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap it since it still needed some development-time which we didn't have.",
+                "image": "images/projects/paintingVR/PaintBucketMetaballs.jpg"
+            },
+            {
+                "title": "Brush importer tool",
+                "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity uGUI and got used when creating brush packs with simpler brushes.",
+                "image": "images/projects/paintingVR/BrushImporterTool.jpg"
+            }
+        ],
+        "variaImages":
+        [
+            "images/Placeholder.png",
+            "images/Placeholder.png",
+            "images/Placeholder.png",
+            "images/Placeholder.png"
+        ]
     }
 ]
