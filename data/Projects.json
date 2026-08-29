@@ -12,6 +12,10 @@
         "informationBits":
         [
             {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
                 "text": "Started working: February 2024",
                 "link": ""
             },
@@ -54,16 +58,69 @@
         ],
         "variaImages":
         [
-            "images/Placeholder.png",
-            "images/Placeholder.png",
-            "images/Placeholder.png",
-            "images/Placeholder.png"
         ]
     },
 
-     {
-        "id": "ProjectKame",
+    {
+        "id": "WWT",
         "highlightNr": "1",
+        "name": "Wait What's That",
+        "category": "professional",
+        "thumbnail": "images/projects/WWT/WaitWhatsThat_Banner.jpg",
+        "youtubeId": "kGtrq4jilpM",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Wait What's That (WWT) is a multiplayer VR pictionary game where the drawer needs to draw a word with a random twist and tool. These can range from drawing on a tv with a rubber chicken, to spraying on a canvas where your sprayed lines constantly disappear.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: September 2024",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4-6 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.oisoi.studio/apps#wait-whats-that"
+            }
+        ],
+        "contributions": "At first I was placed on WWT for only a short while to help with the final polish steps before release. Then later when the player count started going up I returned to fix a bunch of bugs. After I mainly worked as solo dev (I got some help towards the end of the bigger updates) to implement a new dedicated lobby environment, as well as implementing handtracking including some new tools.",
+        "highlights":
+        [
+            {
+                "title": "Social lobby",
+                "description": "To help players connect with each other so they can play games together, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine, and made sure players correctly connected to it.",
+                "image": "images/projects/WWT/WWT_SocialLobby.png"
+            },
+            {
+                "title": "Handtracking",
+                "description": "The studio signed a contract with Meta to implement handtracking into WWT, I was in lead for this assignment. The player's fingers and hands were tracked and made the character's hands move. This also needed to be synchronised, so some time was spent making sure the syncing didn't take too much bandwith.",
+                "image": ""
+            },
+            {
+                "title": "Best Belgian multiplayer game",
+                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025 where we competed against 2 other games.",
+                "image": "images/personal/BelgianGameAward.jpg"
+            }
+        ],
+        "variaImages":
+        [
+        ]
+    },
+
+    {
+        "id": "ProjectKame",
+        "highlightNr": "2",
         "name": "Project Kame",
         "category": "school",
         "thumbnail": "images/projects/projectKame/ProjectKame_Banner.png",
