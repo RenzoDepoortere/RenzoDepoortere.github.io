@@ -125,9 +125,57 @@
         ]
     },
 
+     {
+        "id": "Vandalizer",
+        "highlightNr": "2",
+        "name": "Vandalizer",
+        "category": "professional",
+        "thumbnail": "media/projects/vandalizer/Vandalizer_Banner.jpg",
+        "youtubeId": "PQdPMMwe2SI",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Vandalizer is a high quality multiplayer VR grafitti game where you can spray paint on different objects. Each object is contained within a card which you can unlock by playing.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: June 2025",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 2-3 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.vandalizer.xyz/"
+            }
+        ],
+        "contributions": "I helped develop this game when it was in its earlier phases and was supposed to be a different game. I mainly worked on smaller features and fixing bugs.",
+        "highlights":
+        [
+            {
+                "title": "Highlight spots",
+                "description": "The game used to be split in a creator- and spectator-mode. In creator-mode you could spray an artwork in an environment, take a picture and upload it. I made it so that these pictures would pop up when close to the original picture's location. You could then replay the artwork's creation and like it.",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        [
+        ]
+    },
+
     {
         "id": "ProjectKame",
-        "highlightNr": "2",
+        "highlightNr": "3",
         "name": "Project Kame",
         "category": "school",
         "thumbnail": "media/projects/projectKame/ProjectKame_Banner.png",
