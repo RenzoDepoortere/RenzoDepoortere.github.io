@@ -93,6 +93,42 @@
     transform: scale(1.03);
 }
 
+.HighlightVideoWrapper
+{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.HighlightVideoWrapper:hover
+{
+    transform: scale(1.03);
+}
+
+.HighlightVideoWrapper .HighlightImage
+{
+    width: 100%;
+    height: 100%;
+}
+
+.HighlightVideoWrapper:hover .HighlightImage
+{
+    transform: none;
+}
+
+.PlayIcon
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+}
+
 .ProjectVariaContainer
 {
     width: 100%;
@@ -151,4 +187,11 @@
     max-height: 85vh;
     object-fit: contain; /* Ensures the whole image fits on screen */
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.ModalVideo
+{
+    display: none;
+    background-color: black;
+    outline: none;
 }

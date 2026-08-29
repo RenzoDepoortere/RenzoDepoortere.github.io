@@ -195,13 +195,33 @@ function showSingleProject(projects)
             highlightDiv.className ='Highlight';
 
             // Build inner HTML
-            highlightDiv.innerHTML = `
+            let mediaHTML = '';
+            if (element.video)
+            {
+                mediaHTML = 
+                `
+                    <div class="HighlightVideoWrapper ModalTrigger" data-video="${element.video}">
+                        <img class="HighlightImage" src="${element.image}" alt="${element.title}">
+                        <svg class="PlayIcon" viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.6)"/>
+                            <polygon points="24,18 46,32 24,46" fill="white"/>
+                        </svg>
+                    </div>
+                `;
+            }
+            else if (element.image)
+            {
+                mediaHTML = `<img class="HighlightImage ModalTrigger" src="${element.image}" alt="${element.title}">`;
+            }
+
+            highlightDiv.innerHTML = 
+            `
                     <p class="TextSubtitle_Left">${element.title}</p>
                     <div class="HighlightDescription">
                         <p class="TextDescription_Left">${element.description}</p>
-                        <img class="HighlightImage" src="${element.image}" alt="${element.title}">
+                        ${mediaHTML}
                     </div>
-                `;
+            `;
 
             // Push
             highlightContainer.appendChild(highlightDiv);
@@ -211,20 +231,17 @@ function showSingleProject(projects)
         // Varia
         // =====
 
-        const variaContainer = document.getElementById('ProjectVariaContainer');
-        variaContainer.innerHTML = '';
+        // const variaContainer = document.getElementById('ProjectVariaContainer');
+        // variaContainer.innerHTML = '';
 
-        currentProject.variaImages.forEach(element =>
-        {
-            // Create wrapper
-            const variaDiv = document.createElement('div');
-            //variaDiv.className = 'ProjectVariaContent';
-
-            // Build inner HTML
-            variaDiv.innerHTML = `
-                <img class="ProjectVariaContent" src="${element}" alt="Varia content">
-            `;
-        });
+        // currentProject.variaImages.forEach(element =>
+        // {
+        //     const variaDiv = document.createElement('div');
+        //     variaDiv.innerHTML = `
+        //         <img class="ProjectVariaContent ModalTrigger" src="${element}" alt="Varia content">
+        //     `;
+        //     variaContainer.appendChild(variaDiv);
+        // });
 
         // =====
         // Modal
@@ -232,32 +249,52 @@ function showSingleProject(projects)
 
         const modal = document.getElementById('ImageModal');
         const modalImg = document.getElementById('ModalImage');
+        const modalVid = document.getElementById('ModalVideo');
         const closeModal = document.getElementById('ModalClose');
 
-        // Select all images you want to be clickable (Highlights and Varia)
-        const clickableImages = document.querySelectorAll('.HighlightImage, .ProjectVariaContent');
-
-        // Open modal on image click
-        clickableImages.forEach(img => 
+        // Select all highlight media you want to be clickable (Highlights and Varia)
+        const clickableMedia = document.querySelectorAll('.ModalTrigger');
+        clickableMedia.forEach(media => 
         {
-            img.addEventListener('click', function() 
+            media.addEventListener('click', function() 
             {
                 modal.style.display = "flex";
-                modalImg.src = this.src; // Copy the clicked image's source into the modal
+                
+                // If this clicked element has a video attribute...
+                const videoSrc = this.getAttribute('data-video');
+                
+                if (videoSrc) 
+                {
+                    modalImg.style.display = "none";
+                    modalVid.style.display = "block";
+                    modalVid.src = videoSrc;
+                    modalVid.play();
+                } 
+                else 
+                {
+                    modalVid.style.display = "none";
+                    modalVid.pause();
+                    modalImg.style.display = "block";
+                    modalImg.src = this.src; 
+                }
             });
         });
 
-        // Close modal when clicking the X button
-        closeModal.addEventListener('click', function() 
+        function closeMedia() 
         {
             modal.style.display = "none";
-        });
+            modalVid.pause();
+            modalVid.src = ""; 
+        }
+
+        // Close modal when clicking the X button
+        closeModal.addEventListener('click', closeMedia);
 
         // Close modal if the user clicks the dark background outside the image
         modal.addEventListener('click', function(e) 
         {
             if (e.target === modal)
-                modal.style.display = "none";
+                closeMedia();
         });
     }
 }

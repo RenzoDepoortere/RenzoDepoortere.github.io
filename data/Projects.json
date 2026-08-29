@@ -4,7 +4,7 @@
         "highlightNr": "0",
         "name": "Painting VR",
         "category": "professional",
-        "thumbnail": "images/projects/paintingVR/PaintingVR_Banner.png",
+        "thumbnail": "media/projects/paintingVR/PaintingVR_Banner.png",
         "youtubeId": "h3TrGxojF_w",
         "videoSource": "",
         "banner": "",
@@ -38,22 +38,26 @@
             {
                 "title": "Brush packs",
                 "description": "I developed the system behind buying in-game brush packs. These were DLC's that added a pack of new brushes to the game which you could access from your inventory.",
-                "image": ""
+                "image": "",
+                "video": ""
             },
             {
                 "title": "Canvas starters",
                 "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed canvas starters. These are random shapes and blobs that can be cycled through that will then be printed onto the canvas when created. The blobs were made using metaballs which I learned to use earlier in my internship.",
-                "image": ""
+                "image": "",
+                "video": ""
             },
             {
                 "title": "Paint bucket metaballs",
                 "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap it since it still needed some development-time which we didn't have.",
-                "image": "images/projects/paintingVR/PaintBucketMetaballs.jpg"
+                "image": "media/projects/paintingVR/PaintBucketMetaballs.jpg",
+                "video":""
             },
             {
                 "title": "Brush importer tool",
                 "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity uGUI and got used when creating brush packs with simpler brushes.",
-                "image": "images/projects/paintingVR/BrushImporterTool.jpg"
+                "image": "media/projects/paintingVR/BrushImporterTool.jpg",
+                "video":""
             }
         ],
         "variaImages":
@@ -66,7 +70,7 @@
         "highlightNr": "1",
         "name": "Wait What's That",
         "category": "professional",
-        "thumbnail": "images/projects/WWT/WaitWhatsThat_Banner.jpg",
+        "thumbnail": "media/projects/WWT/WaitWhatsThat_Banner.jpg",
         "youtubeId": "kGtrq4jilpM",
         "videoSource": "",
         "banner": "",
@@ -100,17 +104,20 @@
             {
                 "title": "Social lobby",
                 "description": "To help players connect with each other so they can play games together, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine, and made sure players correctly connected to it.",
-                "image": "images/projects/WWT/WWT_SocialLobby.png"
+                "image": "media/projects/WWT/WWT_SocialLobby.png",
+                "video":""
             },
             {
                 "title": "Handtracking",
                 "description": "The studio signed a contract with Meta to implement handtracking into WWT, I was in lead for this assignment. The player's fingers and hands were tracked and made the character's hands move. This also needed to be synchronised, so some time was spent making sure the syncing didn't take too much bandwith.",
-                "image": ""
+                "image": "media/projects/WWT/WWT_HandtrackingThumb.png",
+                "video":"media/projects/WWT/WWT_Handtracking.mp4"
             },
             {
                 "title": "Best Belgian multiplayer game",
                 "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025 where we competed against 2 other games.",
-                "image": "images/personal/BelgianGameAward.jpg"
+                "image": "media/personal/BelgianGameAward.jpg",
+                "video":""
             }
         ],
         "variaImages":
@@ -123,7 +130,7 @@
         "highlightNr": "2",
         "name": "Project Kame",
         "category": "school",
-        "thumbnail": "images/projects/projectKame/ProjectKame_Banner.png",
+        "thumbnail": "media/projects/projectKame/ProjectKame_Banner.png",
         "youtubeId": "ZrZuJEyop2E",
         "videoSource": "",
         "banner": "",
@@ -150,33 +157,9 @@
         "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system.",
         "highlights":
         [
-            {
-                "title": "Brush packs",
-                "description": "I developed the system behind buying in-game brush packs. These were DLC's that added a pack of new brushes to the game which you could access from your inventory.",
-                "image": ""
-            },
-            {
-                "title": "Canvas starters",
-                "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed canvas starters. These are random shapes and blobs that can be cycled through that will then be printed onto the canvas when created. The blobs were made using metaballs which I learned to use earlier in my internship.",
-                "image": ""
-            },
-            {
-                "title": "Paint bucket metaballs",
-                "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap it since it still needed some development-time which we didn't have.",
-                "image": "images/projects/paintingVR/PaintBucketMetaballs.jpg"
-            },
-            {
-                "title": "Brush importer tool",
-                "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity uGUI and got used when creating brush packs with simpler brushes.",
-                "image": "images/projects/paintingVR/BrushImporterTool.jpg"
-            }
+           
         ],
         "variaImages":
-        [
-            "images/Placeholder.png",
-            "images/Placeholder.png",
-            "images/Placeholder.png",
-            "images/Placeholder.png"
-        ]
+        []
     }
 ]
