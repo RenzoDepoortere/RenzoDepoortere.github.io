@@ -223,6 +223,38 @@
         ]
     },
 
+      {
+        "id": "DeepEngine",
+        "highlightNr": "-1",
+        "name": "Deep Engine",
+        "category": "personal",
+        "thumbnail": "media/projects/deepEngine/DeepEngine_Banner.jpg",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/deepEngine/DeepEngine_Banner.jpg",
+        "summary": "DeepEngine is an engine",
+        "informationBits":
+        [
+            {
+                "text": "Started working: December 2024 until now",
+                "link": ""
+            }
+        ],
+        "contributions": "Since this is my own engine, I made everything!",
+        "highlights":
+        [
+            {
+                "title": "DirectX11 graphics",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        [
+        ]
+    },
+
     {
         "id": "ProjectKame",
         "highlightNr": "-1",
