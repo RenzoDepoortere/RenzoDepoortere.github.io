@@ -1,7 +1,7 @@
 [
     {
         "id": "PaintingPC",
-        "highlightNr": "-1",
+        "highlightNr": "0",
         "name": "Painting PC",
         "category": "professional",
         "thumbnail": "media/projects/paintingPC/PaintingPC_Banner.jpg",
@@ -51,7 +51,7 @@
     
     {
         "id": "PaintingVR",
-        "highlightNr": "-1",
+        "highlightNr": "1",
         "name": "Painting VR",
         "category": "professional",
         "thumbnail": "media/projects/paintingVR/PaintingVR_Banner.png",
@@ -117,7 +117,7 @@
 
     {
         "id": "WWT",
-        "highlightNr": "-1",
+        "highlightNr": "2",
         "name": "Wait What's That",
         "category": "professional",
         "thumbnail": "media/projects/WWT/WaitWhatsThat_Banner.jpg",
@@ -257,7 +257,7 @@
 
     {
         "id": "ProjectKame",
-        "highlightNr": "-1",
+        "highlightNr": "4",
         "name": "Project Kame",
         "category": "school",
         "thumbnail": "media/projects/projectKame/ProjectKame_Banner.png",
@@ -287,7 +287,231 @@
         "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system.",
         "highlights":
         [
-           
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        []
+    },
+
+     {
+        "id": "DigDug",
+        "highlightNr": "3",
+        "name": "Dig Dug",
+        "category": "school",
+        "thumbnail": "media/projects/digDug/DigDug_Banner.gif",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/digDug/DigDug_Banner.gif",
+        "summary": "Dig Dug is a game",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/Programming4_Game"
+            }
+        ],
+        "contributions": "Was done in school",
+        "highlights":
+        [
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        []
+    },
+
+    {
+        "id": "HarryPotterCoS",
+        "highlightNr": "5",
+        "name": "Harry Potter and the Chamber of Secrets",
+        "category": "school",
+        "thumbnail": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "summary": "Harry Potter is a game",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming2_Game"
+            }
+        ],
+        "contributions": "Was done in school",
+        "highlights":
+        [
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        []
+    },
+
+    {
+        "id": "MedievalMadness",
+        "highlightNr": "-1",
+        "name": "Medieval Madness",
+        "category": "school",
+        "thumbnail": "media/projects/medievalMadness/MedievalMadness_Banner.jpg",
+        "youtubeId": "IxLCRjZQHnE",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Medieval Madness is the first big group project I worked on. It's 4-player couch game where every person controls a ragdoll-like character. The game is similar to Super Smash Bros. where you hit players to rack up damage. The more damage they have, the further they launch when hit. The goal is to be the last man standing by pushing every other player into spikes on the border of the map.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the page",
+                "link": "https://wardergrip.itch.io/medieval-madness"
+            }
+        ],
+        "contributions": "For this project we were with 2 programmers. I mainly worked on the character and the dragon which flies overhead the map.",
+        "highlights":
+        [
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        []
+    },
+
+    {
+        "id": "RaytracerRasterizer",
+        "highlightNr": "-1",
+        "name": "Raytracer - Rasterizer",
+        "category": "school",
+        "thumbnail": "media/projects/raytracerRasterizer/RaytracerRasterizer_Banner.png",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/raytracerRasterizer/RaytracerRasterizer_Banner.png",
+        "summary": "I made it",
+        "informationBits":
+        [
+            {
+                "text": "Started working: September 2022",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the raytracer",
+                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming-Raytracer"
+            },
+            {
+                "text": "Check the rasterizer",
+                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming-DualRasterizer"
+            }
+        ],
+        "contributions": "Done in school",
+        "highlights":
+        [
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ],
+        "variaImages":
+        []
+    },
+
+     {
+        "id": "InfluenceMap",
+        "highlightNr": "-1",
+        "name": "Influence map chasing algorithm",
+        "category": "school",
+        "thumbnail": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "summary": "I made it",
+        "informationBits":
+        [
+            {
+                "text": "Started working: September 2022",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/GameplayProgramming_Research"
+            }
+        ],
+        "contributions": "Done in school",
+        "highlights":
+        [
+            {
+                "title": "Thingy",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
         ],
         "variaImages":
         []
