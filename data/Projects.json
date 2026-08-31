@@ -1,7 +1,57 @@
 [
     {
+        "id": "PaintingPC",
+        "highlightNr": "-1",
+        "name": "Painting PC",
+        "category": "professional",
+        "thumbnail": "media/projects/paintingPC/PaintingPC_Banner.jpg",
+        "youtubeId": "9iY5yQuVsdA",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Painting PC is a PC-port of OISOI's Painting VR game. The game keeps a handful of the game's brushes and its realistic painting experience. Additionally the game includes a commission system where people ask you to paint something specific whereafter you gain currency and followers that progress you through the game.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: February 2026 until now",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the store page",
+                "link": "https://store.steampowered.com/app/4521680/Painting_PC/"
+            }
+        ],
+        "contributions": "For Painting PC, besides a quick hand here and there during polish, I was the only programmer working on the project. Thus besides the already existing brushes and painting system, I worked on every aspect of the game.",
+        "highlights":
+        [
+            {
+                "title": "Commissions system",
+                "description": "In the game players can accept commissions from clients in their phone. These are small conversations the player has with the client with potential diverging paths.",
+                "image": "",
+                "video": ""
+            },
+            {
+                "title": "Game savefile system",
+                "description": "Since the player was able to progress in the game I had to create a savefile system.",
+                "image": "",
+                "video": ""
+            }
+        ],
+        "variaImages":
+        [
+        ]
+    },
+    
+    {
         "id": "PaintingVR",
-        "highlightNr": "0",
+        "highlightNr": "-1",
         "name": "Painting VR",
         "category": "professional",
         "thumbnail": "media/projects/paintingVR/PaintingVR_Banner.png",
@@ -67,7 +117,7 @@
 
     {
         "id": "WWT",
-        "highlightNr": "1",
+        "highlightNr": "-1",
         "name": "Wait What's That",
         "category": "professional",
         "thumbnail": "media/projects/WWT/WaitWhatsThat_Banner.jpg",
@@ -127,7 +177,7 @@
 
      {
         "id": "Vandalizer",
-        "highlightNr": "2",
+        "highlightNr": "-1",
         "name": "Vandalizer",
         "category": "professional",
         "thumbnail": "media/projects/vandalizer/Vandalizer_Banner.jpg",
@@ -175,7 +225,7 @@
 
     {
         "id": "ProjectKame",
-        "highlightNr": "3",
+        "highlightNr": "-1",
         "name": "Project Kame",
         "category": "school",
         "thumbnail": "media/projects/projectKame/ProjectKame_Banner.png",
