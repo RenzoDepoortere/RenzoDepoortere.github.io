@@ -16,7 +16,7 @@
                 "link": ""
             },
             {
-                "text": "Started working: February 2026 until now",
+                "text": "Started working: February 2026 until September 2026",
                 "link": ""
             },
             {
@@ -34,18 +34,15 @@
             {
                 "title": "Commissions system",
                 "description": "In the game players can accept commissions from clients in their phone. These are small conversations the player has with the client with potential diverging paths.",
-                "image": "",
+                "image": "media/projects/paintingPC/CommissionSystem.png",
                 "video": ""
             },
             {
                 "title": "Game savefile system",
-                "description": "Since the player was able to progress in the game I had to create a savefile system.",
-                "image": "",
+                "description": "Since the player was able to progress in the game I had to create a savefile system. It might seem simple, but this was the first time I created a proper saving system.",
+                "image": "media/projects/paintingPC/SaveFileSystem.png",
                 "video": ""
             }
-        ],
-        "variaImages":
-        [
         ]
     },
     
