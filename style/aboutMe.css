@@ -3,15 +3,15 @@
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
 }
 
 .AboutMeCard 
 {
     position: relative; /* Crucial: traps the absolute overlay inside this box */
-    width: 328px;
-    height: 328px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     display: block; /* Fixes weird inline-spacing issues with <a> tags */
     overflow: hidden; /* Keeps the zoom effect inside the box */
     cursor: pointer;

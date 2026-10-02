@@ -228,22 +228,6 @@ function showSingleProject(projects)
         });
 
         // =====
-        // Varia
-        // =====
-
-        // const variaContainer = document.getElementById('ProjectVariaContainer');
-        // variaContainer.innerHTML = '';
-
-        // currentProject.variaImages.forEach(element =>
-        // {
-        //     const variaDiv = document.createElement('div');
-        //     variaDiv.innerHTML = `
-        //         <img class="ProjectVariaContent ModalTrigger" src="${element}" alt="Varia content">
-        //     `;
-        //     variaContainer.appendChild(variaDiv);
-        // });
-
-        // =====
         // Modal
         // =====
 

@@ -2,15 +2,12 @@
 {
     width: 100%;
     height: 96px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
-    gap: 10px;
+    gap: 24px;
 }
-
-.ProjectSections > :nth-child(1) { justify-self: end; }     /* Pushes "Professional" to the right side of its column */
-.ProjectSections > :nth-child(2) { justify-self: center; }  /* Keeps "Personal" locked in the center */
-.ProjectSections > :nth-child(3) { justify-self: start; }   /* Pushes "School" to the left side of its column */
 
 .SectionBackground
 {
@@ -45,4 +42,25 @@
     flex-direction: column;
     align-items: center;
     gap: 48px;
+}
+
+@media (max-width: 800px) 
+{
+    .ProjectSections 
+    {
+        /* Switch from Grid to Flexbox so the buttons can wrap to a new line if needed */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        /* Remove the fixed height so the container can grow when buttons wrap */
+        height: auto;
+        gap: 12px;
+    }
+
+    /* Make the buttons a bit more compact for touch screens */
+    .SectionBackground 
+    {
+        padding: 8px 20px;
+    }
 }

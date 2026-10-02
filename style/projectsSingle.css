@@ -130,22 +130,6 @@
     pointer-events: none;
 }
 
-.ProjectVariaContainer
-{
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-.ProjectVariaContent
-{
-    width: 328px;
-    height: 328px;
-    object-fit: cover;
-}
-
 .Modal 
 {
     display: none;
@@ -195,4 +179,52 @@
     display: none;
     background-color: black;
     outline: none;
+}
+
+@media (max-width: 800px) 
+{
+    /* 1. Stack the top summary (Image and info) vertically */
+    .SingleProjectSummary 
+    {
+        flex-direction: column;
+        height: auto;
+        gap: 32px; /* Reduce the massive 128px gap for mobile */
+    }
+
+    /* 2. Make the main banner image scale to the phone screen */
+    .ProjectBannerImage 
+    {
+        width: 100%;
+        height: auto;
+        max-height: 350px; /* Prevents it from taking up the entire screen height */
+    }
+
+    /* 3. Reduce the gap inside the info text slightly */
+    .SummaryInformation 
+    {
+        gap: 32px;
+    }
+
+    /* 4. Stack the Highlight descriptions and their images/videos */
+    .HighlightDescription 
+    {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* 5. Allow highlight media to fill the phone width */
+    .HighlightImage,
+    .HighlightVideoWrapper 
+    {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; /* Keeps a nice cinematic ratio when scaling */
+    }
+
+    /* 8. Move the close button slightly closer to the edge on small screens */
+    .ModalHeader 
+    {
+        top: 16px;
+        right: 16px;
+    }
 }
