@@ -16,7 +16,11 @@
                 "link": ""
             },
             {
-                "text": "Started working: February 2026 until September 2026",
+                "text": "Started working: February 2026",
+                "link": ""
+            },
+                {
+                "text": "Time worked on: 6 months",
                 "link": ""
             },
             {
@@ -79,30 +83,30 @@
                 "link": "https://www.paintingvr.xyz/"
             }
         ],
-        "contributions": "When I started my internship at OISOI this is the game I was initially put on, I helped clear out bugs and polish existing features. Over time I was allowed to develop new features, first with a co-programmer, then on my own. When I officially started working at OISOI I was put on other projects, but every now and then I was placed back to help the lead developer finish some bigger updates. \nThe game is made using Unity, so I mainly used C# during development.",
+        "contributions": "When I started my internship at OISOI this is the game I was initially put on, I helped clear out bugs and polish existing features. Over time I was allowed to develop new features on my own. When I officially started working at OISOI I was put on different projects, but every now and then I was put back on Painting VR to help the lead developer finish some bigger updates.",
         "highlights":
         [
             {
                 "title": "Brush packs",
                 "description": "I developed the system behind buying in-game brush packs. These were DLC's that added a pack of new brushes to the game which you could access from your inventory.",
-                "image": "",
+                "image": "media/projects/paintingVR/BrushPack.jpg",
                 "video": ""
             },
             {
-                "title": "Canvas starters",
-                "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed canvas starters. These are random shapes and blobs that can be cycled through that will then be printed onto the canvas when created. The blobs were made using metaballs which I learned to use earlier in my internship.",
-                "image": "",
+                "title": "Creativity booster",
+                "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed the creativity boosters. These are random shapes and blobs that can be cycled through that will then be printed onto the canvas when created. The blobs were made using metaballs which I learned to use earlier in my internship.",
+                "image": "media/projects/paintingVR/CanvasStarters.jpg",
                 "video": ""
             },
             {
                 "title": "Paint bucket metaballs",
-                "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap it since it still needed some development-time which we didn't have.",
+                "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap the feature since it still needed some development-time which we didn't have at the time.",
                 "image": "media/projects/paintingVR/PaintBucketMetaballs.jpg",
                 "video":""
             },
             {
                 "title": "Brush importer tool",
-                "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity uGUI and got used when creating brush packs with simpler brushes.",
+                "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity UGUI and got used when creating brush packs with simpler brushes.",
                 "image": "media/projects/paintingVR/BrushImporterTool.jpg",
                 "video":""
             }
@@ -145,12 +149,12 @@
                 "link": "https://www.oisoi.studio/apps#wait-whats-that"
             }
         ],
-        "contributions": "At first I was placed on WWT for only a short while to help with the final polish steps before release. Then later when the player count started going up I returned to fix a bunch of bugs. After I mainly worked as solo dev (I got some help towards the end of the bigger updates) to implement a new dedicated lobby environment, as well as implementing handtracking including some new tools.",
+        "contributions": "At first I was placed on WWT for only a short while to help with the final polish steps before release. Then later when the player count started going up, I returned to fix a bunch of bugs. After I mainly worked as solo dev (I got some help towards the end of the bigger updates) to implement a new dedicated lobby environment, as well as implementing handtracking including some new tools.",
         "highlights":
         [
             {
                 "title": "Social lobby",
-                "description": "To help players connect with each other so they can play games together, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine, and made sure players correctly connected to it.",
+                "description": "To help players socialize and make friends, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine and made sure players correctly connected to it.",
                 "image": "media/projects/WWT/WWT_SocialLobby.png",
                 "video":""
             },
@@ -162,7 +166,7 @@
             },
             {
                 "title": "Best Belgian multiplayer game",
-                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025 where we competed against 2 other games.",
+                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025 where we competed against 2 other games. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
                 "image": "media/personal/BelgianGameAward.jpg",
                 "video":""
             }
@@ -205,7 +209,7 @@
                 "link": "https://www.vandalizer.xyz/"
             }
         ],
-        "contributions": "I helped develop this game when it was in its earlier phases and was supposed to be a different game. I mainly worked on smaller features and fixing bugs.",
+        "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs.",
         "highlights":
         [
             {
@@ -261,7 +265,7 @@
         "youtubeId": "ZrZuJEyop2E",
         "videoSource": "",
         "banner": "",
-        "summary": "Project Kame is the last group project I made in DAE. We were commissioned by 2 people to create a prototype of a game idea they had to potentially start their indie studio with. The game is a platformer where you try to reach the end of the level before the timer runs out. The player gets stronger every time they die by power-ups they gain after losing.",
+        "summary": "Project Kame is the last group project I made in DAE. We were commissioned by a pair to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. The game is a platformer where you try to reach the end of the level before the timer runs out. The player gets stronger every time they die by power-ups they gain after losing.",
         "informationBits":
         [
             {
@@ -281,12 +285,12 @@
                 "link": "https://www.paintingvr.xyz/"
             }
         ],
-        "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system.",
+        "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
         "highlights":
         [
             {
-                "title": "Thingy",
-                "description": "I added it",
+                "title": "Enemy behaviour",
+                "description": "The game has a few different enemy types, I made sure each of them moved and attacked as designed. I remember struggling somewhat with the movement behaviour of the ants, but eventually I managed to create something pretty decent.",
                 "image": "",
                 "video":""
             }
@@ -304,7 +308,7 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/digDug/DigDug_Banner.gif",
-        "summary": "Dig Dug is a game",
+        "summary": "Dig Dug is my final exam's project of the Programming course in DAE. In Dig Dug you need to defeat all the monsters to be able to progress towards the next level. This project is a recreation of the original game made by Namco.",
         "informationBits":
         [
             {
@@ -324,7 +328,7 @@
                 "link": "https://github.com/RenzoDepoortere/Programming4_Game"
             }
         ],
-        "contributions": "Was done in school",
+        "contributions": "This game was made in a custom engine we created throughout the programming course. We used few libraries, for example for the rendering-pipeline, the rest was programmed ourselves.",
         "highlights":
         [
             {
