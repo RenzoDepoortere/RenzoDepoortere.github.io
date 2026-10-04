@@ -187,45 +187,55 @@ function showSingleProject(projects)
 
         const highlightContainer = document.getElementById('HighlightsContainer');
         highlightContainer.innerHTML = '';
+
+        const separator = highlightContainer.previousElementSibling;
         
-        currentProject.highlights.forEach(element =>
+        if (currentProject.highlights && 0 < currentProject.highlights.length)
         {
-            // Create wrapper
-            const highlightDiv = document.createElement('div');
-            highlightDiv.className ='Highlight';
-
-            // Build inner HTML
-            let mediaHTML = '';
-            if (element.video)
+            currentProject.highlights.forEach(element =>
             {
-                mediaHTML = 
+                // Create wrapper
+                const highlightDiv = document.createElement('div');
+                highlightDiv.className ='Highlight';
+
+                // Build inner HTML
+                let mediaHTML = '';
+                if (element.video)
+                {
+                    mediaHTML = 
+                    `
+                        <div class="HighlightVideoWrapper ModalTrigger" data-video="${element.video}">
+                            <img class="HighlightImage" src="${element.image}" alt="${element.title}">
+                            <svg class="PlayIcon" viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.6)"/>
+                                <polygon points="24,18 46,32 24,46" fill="white"/>
+                            </svg>
+                        </div>
+                    `;
+                }
+                else if (element.image)
+                {
+                    mediaHTML = `<img class="HighlightImage ModalTrigger" src="${element.image}" alt="${element.title}">`;
+                }
+
+                highlightDiv.innerHTML = 
                 `
-                    <div class="HighlightVideoWrapper ModalTrigger" data-video="${element.video}">
-                        <img class="HighlightImage" src="${element.image}" alt="${element.title}">
-                        <svg class="PlayIcon" viewBox="0 0 64 64">
-                            <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.6)"/>
-                            <polygon points="24,18 46,32 24,46" fill="white"/>
-                        </svg>
-                    </div>
+                        <p class="TextSubtitle_Left">${element.title}</p>
+                        <div class="HighlightDescription">
+                            <p class="TextDescription_Left">${element.description}</p>
+                            ${mediaHTML}
+                        </div>
                 `;
-            }
-            else if (element.image)
-            {
-                mediaHTML = `<img class="HighlightImage ModalTrigger" src="${element.image}" alt="${element.title}">`;
-            }
 
-            highlightDiv.innerHTML = 
-            `
-                    <p class="TextSubtitle_Left">${element.title}</p>
-                    <div class="HighlightDescription">
-                        <p class="TextDescription_Left">${element.description}</p>
-                        ${mediaHTML}
-                    </div>
-            `;
-
-            // Push
-            highlightContainer.appendChild(highlightDiv);
-        });
+                // Push
+                highlightContainer.appendChild(highlightDiv);
+            });
+        }
+        else
+        {
+            highlightContainer.style.display = "none";
+            separator.style.display = "none";
+        }
 
         // =====
         // Modal

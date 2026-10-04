@@ -170,9 +170,6 @@
                 "image": "media/personal/BelgianGameAward.jpg",
                 "video":""
             }
-        ],
-        "variaImages":
-        [
         ]
     },
 
@@ -209,19 +206,8 @@
                 "link": "https://www.vandalizer.xyz/"
             }
         ],
-        "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs.",
-        "highlights":
-        [
-            {
-                "title": "Highlight spots",
-                "description": "The game used to be split in a creator- and spectator-mode. In creator-mode you could spray an artwork in an environment, take a picture and upload it. I made it so that these pictures would pop up when close to the original picture's location. You could then replay the artwork's creation and like it.",
-                "image": "",
-                "video":""
-            }
-        ],
-        "variaImages":
-        [
-        ]
+        "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
+        "highlights": []
     },
 
       {
@@ -250,9 +236,6 @@
                 "image": "",
                 "video":""
             }
-        ],
-        "variaImages":
-        [
         ]
     },
 
@@ -265,7 +248,7 @@
         "youtubeId": "ZrZuJEyop2E",
         "videoSource": "",
         "banner": "",
-        "summary": "Project Kame is the last group project I made in DAE. We were commissioned by a pair to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. The game is a platformer where you try to reach the end of the level before the timer runs out. The player gets stronger every time they die by power-ups they gain after losing.",
+        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to get through the level. Every time the players die they gain power-ups to help progress the level, at the cost of a lower final score.",
         "informationBits":
         [
             {
@@ -285,7 +268,7 @@
                 "link": "https://www.paintingvr.xyz/"
             }
         ],
-        "contributions": "In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
+        "contributions": "Project Kame was the last group project I made in DAE. We were commissioned by a duo to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
         "highlights":
         [
             {
@@ -294,9 +277,7 @@
                 "image": "",
                 "video":""
             }
-        ],
-        "variaImages":
-        []
+        ]
     },
 
      {
