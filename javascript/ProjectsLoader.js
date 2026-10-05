@@ -238,6 +238,12 @@ function showSingleProject(projects)
         }
 
         // =====
+        // Other
+        // =====
+
+        document.getElementById('Experience').innerText = currentProject.experience;
+
+        // =====
         // Modal
         // =====
 
