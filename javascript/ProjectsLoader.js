@@ -241,6 +241,20 @@ function showSingleProject(projects)
         // Other
         // =====
 
+        const variaImages = document.getElementById('VariaImages');
+        variaImages.innerHTML = '';
+
+        currentProject.variaImages.forEach(element =>
+        {
+            // Create image
+            const image = document.createElement('img');
+            image.className = "VariaImageCard ModalTrigger";
+            image.src = element;
+            image.alt = element;
+
+            variaImages.appendChild(image);
+        });
+
         document.getElementById('Experience').innerText = currentProject.experience;
 
         // =====

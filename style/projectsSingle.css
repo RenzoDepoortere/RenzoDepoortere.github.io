@@ -119,6 +119,30 @@
     transform: none;
 }
 
+.VariaImages 
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.VariaImageCard 
+{
+    position: relative;
+    width: 100%;             /* Fills the grid column width */
+    aspect-ratio: 1 / 1;     /* Maintains 1:1 square ratio */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.VariaImageCard:hover 
+{
+    transform: scale(1.03);
+}
+
 .PlayIcon
 {
     position: absolute;

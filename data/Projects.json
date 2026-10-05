@@ -48,7 +48,13 @@
                 "video": ""
             }
         ],
-        "experience": "It was quite exciting working on Painting PC, as I was the sole programmer a lot of responsability was laid in my hands. I think what I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't yet clear, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development."
+        "experience": "It was quite exciting working on Painting PC, as I was the sole programmer a lot of responsability was laid in my hands. I think what I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't yet clear, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
+        "variaImages":
+        [
+            "media/projects/paintingPC/PPC_Varia_1.jpg",
+            "media/projects/paintingPC/PPC_Varia_2.jpg",
+            "media/projects/paintingPC/PPC_Varia_3.jpg"
+        ]
     },
     
     {
