@@ -118,9 +118,8 @@
                 "video":""
             }
         ],
-        "variaImages":
-        [
-        ]
+        "experience": "Painting VR was the first bigger project I worked on, it was also the first project I had to work on which was already released. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
+        "variaImages":[]
     },
 
     {
@@ -177,7 +176,9 @@
                 "image": "media/personal/BelgianGameAward.jpg",
                 "video":""
             }
-        ]
+        ],
+        "experience": "This was the first time I worked on a multiplayer project. I already had some basics by fiddling around in my free time, but this took me a bit further into the discipline. It was quite an eye opener since there were many aspects of creating a multiplayer game that I didn't take into account.",
+        "variaImages": []
     },
 
      {
@@ -214,7 +215,9 @@
             }
         ],
         "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
-        "highlights": []
+        "highlights": [],
+        "experience": "The initial idea of Vandalizer was quite ambicious, sadly enough we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
+        "variaImages": []
     },
 
       {

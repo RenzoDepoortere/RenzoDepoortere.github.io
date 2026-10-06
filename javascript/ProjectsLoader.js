@@ -188,7 +188,7 @@ function showSingleProject(projects)
         const highlightContainer = document.getElementById('HighlightsContainer');
         highlightContainer.innerHTML = '';
 
-        const separator = highlightContainer.previousElementSibling;
+        separator = highlightContainer.previousElementSibling;
         
         if (currentProject.highlights && 0 < currentProject.highlights.length)
         {
@@ -244,16 +244,26 @@ function showSingleProject(projects)
         const variaImages = document.getElementById('VariaImages');
         variaImages.innerHTML = '';
 
-        currentProject.variaImages.forEach(element =>
-        {
-            // Create image
-            const image = document.createElement('img');
-            image.className = "VariaImageCard ModalTrigger";
-            image.src = element;
-            image.alt = element;
+        separator = variaImages.previousElementSibling;
 
-            variaImages.appendChild(image);
-        });
+        if (currentProject.variaImages && 0 < currentProject.variaImages.length)
+        {
+            currentProject.variaImages.forEach(element =>
+            {
+                // Create image
+                const image = document.createElement('img');
+                image.className = "VariaImageCard ModalTrigger";
+                image.src = element;
+                image.alt = element;
+
+                variaImages.appendChild(image);
+            });
+        }
+        else
+        {
+            variaImages.style.display = "none";
+            separator.style.display = "none";
+        }
 
         document.getElementById('Experience').innerText = currentProject.experience;
 
