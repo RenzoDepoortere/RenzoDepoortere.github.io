@@ -166,7 +166,7 @@
             },
             {
                 "title": "Handtracking",
-                "description": "The studio signed a contract with Meta to implement handtracking into WWT, I was in lead for this assignment. The player's fingers and hands were tracked and made the character's hands move. This also needed to be synchronised, so some time was spent making sure the syncing didn't take too much bandwith.",
+                "description": "I was also in lead for adding handtracking to the game. Besides ... the player's fingers to the in-game character's finger, they also needed to be synchronised. So some time was spent making sure the syncing didn't take too much bandwidth.",
                 "image": "media/projects/WWT/WWT_HandtrackingThumb.png",
                 "video":"media/projects/WWT/WWT_Handtracking.mp4"
             },
@@ -278,7 +278,7 @@
                 "link": "https://novacro.itch.io/project-kame"
             }
         ],
-        "contributions": "Project Kame was the last group project I made in DAE. We were commissioned by a duo to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
+        "contributions": "Project Kame was the last group project I made in DAE. In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
         "highlights":
         [
             {
@@ -287,7 +287,9 @@
                 "image": "media/projects/projectKame/Ants.png",
                 "video":""
             }
-        ]
+        ],
+        "experience": "For Project Kame were commissioned by a duo to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. It was my first time working for clients, so here I learned that clear communication between both parties was really important. While we had a lot of freedom in the creating of the prototype, our clients still had the final word.",
+        "variaImages": []
     },
 
      {
@@ -328,7 +330,9 @@
                 "image": "",
                 "video":""
             }
-        ]
+        ],
+        "experience": "During this course I achieved a deeper understanding of how a game engine works. I learned how assets get handled and how a general update pipeline looks like. Personally I'm really happy with how this project turned out.",
+        "variaImages": []
     },
 
     {
@@ -361,7 +365,9 @@
             }
         ],
         "contributions": "This project was my final exam for the Graphics Programming 2 course in DAE. We were given a game engine with a basic setup game loop, during the course we learned how to create the rendering pipeline for the engine using DirectX 11. I added functionality like: shadow maps, particle emitters, deferred light renderer, model animators, HLSL shaders, post processing, ...",
-        "highlights":[]
+        "highlights":[],
+        "experience": "During this course I learned how much \"graphics programming\" entails. I noticed that I've barely scratched the surface of the disicpline, and got quite excited about all the possibilities. That's when my interest towards graphics programming really began.",
+        "variaImages": []
     },
 
     {
@@ -394,47 +400,12 @@
             }
         ],
         "contributions": "For this project we were with 2 programmers. I mainly worked on the character controls, focusing to make them as intuitive as possible. I also worked on creating the dragon, it flies over the map leaving behind a trail of fire, damaging anyone that gets caught in its spread.",
-        "highlights":[]
+        "highlights":[],
+        "experience": "I'm quite happy of this project I created with my team. As stated earlier, this was the first big groups project I worked on. This is when I learned a lot of soft skills such project planning, game promotion, ... This is also when I became more acquainted with working inside of Unity.",   
+        "variaImages": []
     },
 
     {
-        "id": "RaytracerRasterizer",
-        "highlightNr": "-1",
-        "name": "Raytracer - Rasterizer",
-        "category": "school",
-        "thumbnail": "media/projects/raytracerRasterizer/RaytracerRasterizer_Banner.png",
-        "youtubeId": "",
-        "videoSource": "",
-        "banner": "media/projects/raytracerRasterizer/RaytracerRasterizer_Banner.png",
-        "summary": "Two simple demos demonstrating the result of what we learned during the Graphics Programming 1 course in DAE. One demonstrates a few meshes being rendered using a raytracer, each mesh using a different material. The other demonstrates a mesh being drawn using a rasterizing in DirectX.",
-        "informationBits":
-        [
-            {
-                "text": "Started working: September 2022",
-                "link": ""
-            },
-            {
-                "text": "Time worked on: 4 months",
-                "link": ""
-            },
-            {
-                "text": "Language: C++",
-                "link": ""
-            },
-            {
-                "text": "Check the raytracer",
-                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming-Raytracer"
-            },
-            {
-                "text": "Check the rasterizer",
-                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming-DualRasterizer"
-            }
-        ],
-        "contributions": "Both of these demos were made from scratch. We learned how to build these renders up, learning something new every week, and applying it to our growing application.",
-        "highlights": []
-    },
-
-     {
         "id": "InfluenceMap",
         "highlightNr": "-1",
         "name": "Influence map chasing algorithm",
@@ -443,7 +414,7 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/influenceMap/InfluenceMap_Banner.gif",
-        "summary": "This project demonstrates a chasing algorithm which could be used for in-game AI, based on a research paper.",
+        "summary": "This project demonstrates a chasing algorithm which could be used for in-game AI, based on a research paper. The algorithm works based off of an influence map, this would decide where to NPC should look when chasing the player without giving away the exact position. This would allow for more natural feeling chases.",
         "informationBits":
         [
             {
@@ -463,7 +434,9 @@
                 "link": "https://github.com/RenzoDepoortere/GameplayProgramming_Research"
             }
         ],
-        "contributions": "This project was the exam for the Gameplay Programming course in DAE. There we learned about different algorithms used to control NPC AI in games. Here I created a chasing algorithm based on an influence map. This would decide where to NPC should look when chasing the player without giving away the exact position, allowing for more natural feeling chases.",
-        "highlights": []
+        "contributions": "I started the project from a custom engine we learned about in class. Most programming was spent on the AI algorithm itself.",
+        "highlights": [],
+        "experience": "This project was one of the exams I had to do for the Gameplay Programming course in DAE. There we learned about all kinds of different algorithms used to control NPC AI in games. We learned about A* pathfinding, behaviour trees, ...",
+        "variaImages": []
     }
 ]
