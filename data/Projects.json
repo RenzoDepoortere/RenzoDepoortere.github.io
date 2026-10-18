@@ -217,7 +217,13 @@
         "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
         "highlights": [],
         "experience": "The initial idea of Vandalizer was quite ambicious, sadly enough we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
-        "variaImages": []
+        "variaImages":
+        [
+            "media/projects/vandalizer/Vandalizer_Varia_1.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_2.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_3.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_4.jpg"
+        ]
     },
 
       {
@@ -289,7 +295,12 @@
             }
         ],
         "experience": "For Project Kame were commissioned by a duo to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. It was my first time working for clients, so here I learned that clear communication between both parties was really important. While we had a lot of freedom in the creating of the prototype, our clients still had the final word.",
-        "variaImages": []
+       "variaImages":
+        [
+            "media/projects/projectKame/PK_Varia_1.jpg",
+            "media/projects/projectKame/PK_Varia_2.jpg",
+            "media/projects/projectKame/PK_Varia_3.jpg"
+        ]
     },
 
      {
@@ -332,7 +343,12 @@
             }
         ],
         "experience": "During this course I achieved a deeper understanding of how a game engine works. I learned how assets get handled and how a general update pipeline looks like. Personally I'm really happy with how this project turned out.",
-        "variaImages": []
+        "variaImages":
+        [
+            "media/projects/digDug/DD_Varia_1.png",
+            "media/projects/digDug/DD_Varia_2.png",
+            "media/projects/digDug/DD_Varia_3.png"
+        ]
     },
 
     {
@@ -367,7 +383,13 @@
         "contributions": "This project was my final exam for the Graphics Programming 2 course in DAE. We were given a game engine with a basic setup game loop, during the course we learned how to create the rendering pipeline for the engine using DirectX 11. I added functionality like: shadow maps, particle emitters, deferred light renderer, model animators, HLSL shaders, post processing, ...",
         "highlights":[],
         "experience": "During this course I learned how much \"graphics programming\" entails. I noticed that I've barely scratched the surface of the disicpline, and got quite excited about all the possibilities. That's when my interest towards graphics programming really began.",
-        "variaImages": []
+        "variaImages":
+        [
+            "media/projects/harryPotterCoS/HarryPotter_Varia_1.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_2.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_3.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_4.png"
+        ]
     },
 
     {
@@ -402,7 +424,13 @@
         "contributions": "For this project we were with 2 programmers. I mainly worked on the character controls, focusing to make them as intuitive as possible. I also worked on creating the dragon, it flies over the map leaving behind a trail of fire, damaging anyone that gets caught in its spread.",
         "highlights":[],
         "experience": "I'm quite happy of this project I created with my team. As stated earlier, this was the first big groups project I worked on. This is when I learned a lot of soft skills such project planning, game promotion, ... This is also when I became more acquainted with working inside of Unity.",   
-        "variaImages": []
+        "variaImages":
+        [
+            "media/projects/medievalMadness/MedMadness_Varia_1.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_2.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_3.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_4.jpg"
+        ]
     },
 
     {
@@ -437,6 +465,11 @@
         "contributions": "I started the project from a custom engine we learned about in class. Most programming was spent on the AI algorithm itself.",
         "highlights": [],
         "experience": "This project was one of the exams I had to do for the Gameplay Programming course in DAE. There we learned about all kinds of different algorithms used to control NPC AI in games. We learned about A* pathfinding, behaviour trees, ...",
-        "variaImages": []
+              "variaImages":
+        [
+            "media/projects/influenceMap/InfluenceMap_Varia_1.png",
+            "media/projects/influenceMap/InfluenceMap_Varia_2.gif",
+            "media/projects/influenceMap/InfluenceMap_Varia_3.gif"
+        ]
     }
 ]
