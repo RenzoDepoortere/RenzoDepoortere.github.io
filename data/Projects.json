@@ -1,0 +1,475 @@
+[
+    {
+        "id": "PaintingPC",
+        "highlightNr": "0",
+        "name": "Painting PC",
+        "category": "professional",
+        "thumbnail": "media/projects/paintingPC/PaintingPC_Banner.jpg",
+        "youtubeId": "9iY5yQuVsdA",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Painting PC is a PC-port of OISOI's Painting VR game. The game keeps a handful of the game's brushes and its realistic painting experience. Additionally the game includes a commission system where people ask you to paint something specific whereafter you gain currency and followers that progress you through the game.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: February 2026",
+                "link": ""
+            },
+                {
+                "text": "Time worked on: 6 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the store page",
+                "link": "https://store.steampowered.com/app/4521680/Painting_PC/"
+            }
+        ],
+        "contributions": "For Painting PC, besides a quick hand here and there during polish, I was the only programmer working on the project. Thus besides the already existing brushes and painting system, I worked on every aspect of the game.",
+        "highlights":
+        [
+            {
+                "title": "Commissions system",
+                "description": "In the game players can accept commissions from clients on their phone. These are small conversations the player has with the client with potential diverging paths. Every message that has been sent, both from the player and commissioner, are saved to be viewed at any time.",
+                "image": "media/projects/paintingPC/CommissionSystem.png",
+                "video": ""
+            },
+            {
+                "title": "Game savefile system",
+                "description": "Since the player was able to progress in the game I had to create a savefile system. As the game was already released and some bigger features where still being worked on, I had to make sure that these older game files would still work with the newer versions.",
+                "image": "media/projects/paintingPC/SaveFileSystem.png",
+                "video": ""
+            }
+        ],
+        "experience": "It was quite exciting working on Painting PC, as I was the sole programmer I dealt with a lot of responsability. What I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't quite clear yet, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
+        "variaImages":
+        [
+            "media/projects/paintingPC/PPC_Varia_1.jpg",
+            "media/projects/paintingPC/PPC_Varia_2.jpg",
+            "media/projects/paintingPC/PPC_Varia_3.jpg"
+        ]
+    },
+    
+    {
+        "id": "PaintingVR",
+        "highlightNr": "1",
+        "name": "Painting VR",
+        "category": "professional",
+        "thumbnail": "media/projects/paintingVR/PaintingVR_Banner.png",
+        "youtubeId": "h3TrGxojF_w",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Painting VR is the most rated painting simulation app on the Meta VR platform. It has an extensive set of brushes and tools and allows for highly realistic brush strokes. Players can also enjoy painting in a handful of diverse environments. The game gets frequently updated with new features, brushes and tools.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: February 2024",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 12 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.paintingvr.xyz/"
+            }
+        ],
+        "contributions": "When I started my internship at OISOI this is the game I was initially put on, I helped clear out bugs and polish existing features. Over time I was allowed to develop new features on my own. When I officially started working at OISOI I was put on different projects, but every now and then I was put back on Painting VR to help the lead developer finish some bigger updates.",
+        "highlights":
+        [
+            {
+                "title": "Brush packs",
+                "description": "I developed the system behind buying in-game brush packs. These were DLC's that added a pack of new brushes which you could access from your inventory.",
+                "image": "media/projects/paintingVR/BrushPack.jpg",
+                "video": ""
+            },
+            {
+                "title": "Creativity booster",
+                "description": "An empty canvas can be quite intimidating, stopping players from painting anything. To resolve that issue I developed the creativity boosters. These are random shapes and blobs that can be cycled through, which will then be printed onto the canvas after it has been created. The blobs were made using the metaballs-technique which I learned to use earlier in my internship.",
+                "image": "media/projects/paintingVR/CanvasStarters.jpg",
+                "video": ""
+            },
+            {
+                "title": "Paint bucket metaballs",
+                "description": "In my internship I asked to work on something graphics programming related. I was allowed to try and improve the existing paint bucket's pouring mechanic by using metaballs. I managed to get a rough prototype working, but we decided to scrap the feature since it still needed some development-time which we didn't have at the time.",
+                "image": "media/projects/paintingVR/PaintBucketMetaballs.jpg",
+                "video":""
+            },
+            {
+                "title": "Brush importer tool",
+                "description": "One of my tasks during the internship was to make a tool that would make it easier to create new brushes. The tool was made using Unity UGUI and got used when creating brush packs with simpler brushes.",
+                "image": "media/projects/paintingVR/BrushImporterTool.jpg",
+                "video":""
+            }
+        ],
+        "experience": "Painting VR was the first bigger project I worked on, it was also the first released project I had to work. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
+        "variaImages":[]
+    },
+
+    {
+        "id": "WWT",
+        "highlightNr": "2",
+        "name": "Wait What's That",
+        "category": "professional",
+        "thumbnail": "media/projects/WWT/WaitWhatsThat_Banner.jpg",
+        "youtubeId": "kGtrq4jilpM",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Wait What's That (WWT) is a multiplayer VR pictionary game where the drawer needs to draw a word with a random twist and tool. These can range from drawing on a tv with a rubber chicken, to spraying on a canvas which erases your drawn lines after some time.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: September 2024",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 6 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.oisoi.studio/apps#wait-whats-that"
+            }
+        ],
+        "contributions": "At first I was placed on WWT for only a short while to help with the final polish steps before release. Later when the player count started going up, I returned to fix a bunch of bugs. After, I mainly worked as solo dev (I got some help towards the end of the bigger updates) to implement a new dedicated lobby environment, handtracking, and some new tools.",
+        "highlights":
+        [
+            {
+                "title": "Social lobby",
+                "description": "To help players socialize and make friends, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine and made sure players correctly connected to it.",
+                "image": "media/projects/WWT/WWT_SocialLobby.png",
+                "video":""
+            },
+            {
+                "title": "Handtracking",
+                "description": "I was also in lead for adding handtracking to the game. Besides mapping the player's fingers to the in-game character's finger, they also needed to be synchronised over the network. So some time was spent making sure the syncing didn't take too much bandwidth, while still making sure the player's intended gestures where being showcased correctly.",
+                "image": "media/projects/WWT/WWT_HandtrackingThumb.png",
+                "video":"media/projects/WWT/WWT_Handtracking.mp4"
+            },
+            {
+                "title": "Best Belgian multiplayer game",
+                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
+                "image": "media/personal/BelgianGameAward.jpg",
+                "video":""
+            }
+        ],
+        "experience": "This was the first time I worked on a multiplayer project. I already had some basics down by fiddling around during my free time, but this took me a bit further into the discipline. It was quite an eye opener for me since there were many aspects you needed to take into account when programming; everything needed to be synchronised but still feel responsive, slower internet needed to be taken care of, what happens if someone disconnects, ...",
+        "variaImages": []
+    },
+
+     {
+        "id": "Vandalizer",
+        "highlightNr": "-1",
+        "name": "Vandalizer",
+        "category": "professional",
+        "thumbnail": "media/projects/vandalizer/Vandalizer_Banner.jpg",
+        "youtubeId": "PQdPMMwe2SI",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Vandalizer is a high quality multiplayer VR grafitti game where you can spray paint on different objects. Each object is contained within a card which you can unlock by playing.",
+        "informationBits":
+        [
+            {
+                "text": "Studio: OISOI",
+                "link": ""
+            },
+            {
+                "text": "Started working: June 2025",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 3 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://www.vandalizer.xyz/"
+            }
+        ],
+        "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
+        "highlights": [],
+        "experience": "The initial idea of Vandalizer was quite ambitious, sadly enough we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
+        "variaImages":
+        [
+            "media/projects/vandalizer/Vandalizer_Varia_1.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_2.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_3.jpg",
+            "media/projects/vandalizer/Vandalizer_Varia_4.jpg"
+        ]
+    },
+
+      {
+        "id": "DeepEngine",
+        "highlightNr": "-1",
+        "name": "Deep Engine",
+        "category": "personal",
+        "thumbnail": "media/projects/deepEngine/DeepEngine_Banner.jpg",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/deepEngine/DeepEngine_Banner.jpg",
+        "summary": "DeepEngine is an engine",
+        "informationBits":
+        [
+            {
+                "text": "Started working: December 2024 until now",
+                "link": ""
+            }
+        ],
+        "contributions": "Since this is my own engine, I made everything!",
+        "highlights":
+        [
+            {
+                "title": "DirectX11 graphics",
+                "description": "I added it",
+                "image": "",
+                "video":""
+            }
+        ]
+    },
+
+    {
+        "id": "ProjectKame",
+        "highlightNr": "4",
+        "name": "Project Kame",
+        "category": "school",
+        "thumbnail": "media/projects/projectKame/ProjectKame_Banner.png",
+        "youtubeId": "ZrZuJEyop2E",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to get through the level. Every time the player dies they gain power-ups to help progress the level, at the cost of a lower final score.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: February 2024",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unreal Engine",
+                "link": ""
+            },
+            {
+                "text": "Visit the site",
+                "link": "https://novacro.itch.io/project-kame"
+            }
+        ],
+        "contributions": "Project Kame was the last group project I made in DAE. In this project we were with 2 programmers, I mainly worked on the enemies in the game, the swimming movement, the power-up system and the game loop system. I also made sure we delivered a proper working build every week.",
+        "highlights":
+        [
+            {
+                "title": "Enemy behaviour",
+                "description": "The game has a few different enemy types, I made sure each of them moved and attacked as designed. I remember struggling somewhat with the movement behaviour of the ants, but eventually I managed to create something pretty decent.",
+                "image": "media/projects/projectKame/Ants.png",
+                "video":""
+            }
+        ],
+        "experience": "For Project Kame we were commissioned by a duo to create a prototype version of one of their game ideas, which they hoped would kickstart their own indie studio. It was my first time working for clients, so here I learned that clear communication between both parties was really important. While we had a lot of freedom in the creating of the prototype, our clients still had the final word.",
+       "variaImages":
+        [
+            "media/projects/projectKame/PK_Varia_1.jpg",
+            "media/projects/projectKame/PK_Varia_2.jpg",
+            "media/projects/projectKame/PK_Varia_3.jpg"
+        ]
+    },
+
+     {
+        "id": "DigDug",
+        "highlightNr": "3",
+        "name": "Dig Dug",
+        "category": "school",
+        "thumbnail": "media/projects/digDug/DigDug_Banner.gif",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/digDug/DigDug_Banner.gif",
+        "summary": "In Dig Dug you need to defeat all the monsters to be able to progress towards the next level. This is possible by either blowing them up using your air pump, or crushing them underneath a falling rock. This project is a recreation of the original game made by Namco.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/Programming4_Game"
+            }
+        ],
+        "contributions": "Dig Dug is my final exam's project of the Programming course in DAE, I made the game in a custom engine we created throughout the course. We used a few libraries, for example for the rendering-pipeline, the rest was programmed ourselves.",
+        "highlights":
+        [
+            {
+                "title": "Level creation",
+                "description": "Each level in the game was made using an external software program. These would be exported into a simple file which would then be read when loading the game.",
+                "image": "",
+                "video":""
+            }
+        ],
+        "experience": "During this course I achieved a deeper understanding of how a game engine works. I learned how assets get handled and how a general update pipeline looks like. Personally I'm really happy with how this project turned out.",
+        "variaImages":
+        [
+            "media/projects/digDug/DD_Varia_1.png",
+            "media/projects/digDug/DD_Varia_2.png",
+            "media/projects/digDug/DD_Varia_3.png"
+        ]
+    },
+
+    {
+        "id": "HarryPotterCoS",
+        "highlightNr": "5",
+        "name": "Harry Potter and the Chamber of Secrets",
+        "category": "school",
+        "thumbnail": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "summary": "Harry Potter and the Chamber of Secrets is a simple demo recreation of the original game released by EA. In this game you solve simple puzzles and defeat enemies to progress through the level and reach the final star.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/GraphicsProgramming2_Game"
+            }
+        ],
+        "contributions": "This project was my final exam for the Graphics Programming 2 course in DAE. We were given a game engine with a basic setup game loop, during the course we learned how to create the rendering pipeline for the engine using DirectX 11. I added functionality like: shadow maps, particle emitters, deferred light renderer, model animators, HLSL shaders, post processing, ...",
+        "highlights":[],
+        "experience": "During this course I learned how much \"graphics programming\" entails. I noticed that I've barely scratched the surface of the disicpline, and got quite excited learning about all the possibilities. That's when my interest towards graphics programming really began.",
+        "variaImages":
+        [
+            "media/projects/harryPotterCoS/HarryPotter_Varia_1.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_2.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_3.png",
+            "media/projects/harryPotterCoS/HarryPotter_Varia_4.png"
+        ]
+    },
+
+    {
+        "id": "MedievalMadness",
+        "highlightNr": "-1",
+        "name": "Medieval Madness",
+        "category": "school",
+        "thumbnail": "media/projects/medievalMadness/MedievalMadness_Banner.jpg",
+        "youtubeId": "IxLCRjZQHnE",
+        "videoSource": "",
+        "banner": "",
+        "summary": "Medieval Madness is the first big group project I worked on. It's a 4-player couch game where every person controls a ragdoll-like character. The game is similar to Super Smash Bros. where you hit players multiple times to rack up damage. The more damage they have, the further they launch when hit. The goal is to be the last man standing by pushing every other player into spikes on the border of the map.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: January 2023",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 4 months",
+                "link": ""
+            },
+            {
+                "text": "Engine: Unity",
+                "link": ""
+            },
+            {
+                "text": "Visit the page",
+                "link": "https://wardergrip.itch.io/medieval-madness"
+            }
+        ],
+        "contributions": "For this project we were with 2 programmers. I mainly worked on the character controls, focusing to make them as intuitive as possible. I also worked on creating the dragon, it flies over the map leaving behind a trail of fire, damaging anyone that gets caught in its spread.",
+        "highlights":[],
+        "experience": "I'm quite happy of this project I created with my team. As stated earlier, this was the first big groups project I worked on. This is when I learned a lot of soft skills such as project planning, game promotion, ... This is also when I became more acquainted with working inside of Unity.",   
+        "variaImages":
+        [
+            "media/projects/medievalMadness/MedMadness_Varia_1.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_2.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_3.jpg",
+            "media/projects/medievalMadness/MedMadness_Varia_4.jpg"
+        ]
+    },
+
+    {
+        "id": "InfluenceMap",
+        "highlightNr": "-1",
+        "name": "Influence map chasing algorithm",
+        "category": "school",
+        "thumbnail": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "youtubeId": "",
+        "videoSource": "",
+        "banner": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "summary": "This project demonstrates a chasing algorithm which could be used for in-game AI. It was based on a research paper and uses an influence map at its core. This map would decide where the NPC should look when chasing the player without giving away the exact position. This would allow for more natural feeling chases.",
+        "informationBits":
+        [
+            {
+                "text": "Started working: December 2022",
+                "link": ""
+            },
+            {
+                "text": "Time worked on: 1 month",
+                "link": ""
+            },
+            {
+                "text": "Language: C++",
+                "link": ""
+            },
+            {
+                "text": "Check the code",
+                "link": "https://github.com/RenzoDepoortere/GameplayProgramming_Research"
+            }
+        ],
+        "contributions": "I started the project from a custom engine we learned about in class. Most programming was spent on the AI algorithm itself.",
+        "highlights": [],
+        "experience": "This project was one of the exams I had to do for the Gameplay Programming course in DAE. There we learned about all kinds of different algorithms used to control NPC AI in games. We learned about A* pathfinding, behaviour trees, ...",
+              "variaImages":
+        [
+            "media/projects/influenceMap/InfluenceMap_Varia_1.png",
+            "media/projects/influenceMap/InfluenceMap_Varia_2.gif",
+            "media/projects/influenceMap/InfluenceMap_Varia_3.gif"
+        ]
+    }
+]

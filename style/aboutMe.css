@@ -1,0 +1,126 @@
+.AboutMePictureContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.AboutMeCard 
+{
+    position: relative; /* Crucial: traps the absolute overlay inside this box */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block; /* Fixes weird inline-spacing issues with <a> tags */
+    overflow: hidden; /* Keeps the zoom effect inside the box */
+    cursor: pointer;
+}
+
+/* When I hover the Card, change the Overlay */
+.AboutMeCard:hover .AboutMeOverlay 
+{
+    opacity: 1; /* Make the tint visible */
+}
+
+/* When I hover the Card, change the Text */
+.AboutMeCard:hover .TextAboutMeSubject 
+{
+    transform: translateY(0px); /* Slide the text up into dead-center */
+}
+
+/* When I hover the Card, change the Image */
+.AboutMeCard:hover .AboutMePicture 
+{
+    transform: scale(1.08); /* Slightly zoom the image in behind the tint */
+}
+
+.AboutMePicture 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease; /* Prepares the image for a smooth zoom */
+}
+
+.AboutMeOverlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #44444179;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    
+    opacity: 0; /* Invisible by default! */
+    transition: opacity 0.3s ease; /* Fades in smoothly */
+}
+
+.AboutMeModal 
+{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.AboutMeModal.show 
+{
+    display: flex;
+    opacity: 1;
+}
+
+.AboutMeModalContent 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.AboutMeModalClose 
+{
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    fill: white;
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.AboutMeModalClose:hover 
+{
+    fill: #CDC6A5;
+}
+
+#ModalImage 
+{
+    max-width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.ModalText 
+{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.4;
+}

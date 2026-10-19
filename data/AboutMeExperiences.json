@@ -1,0 +1,29 @@
+[
+    {
+        "id": "Family",
+        "subject": "Family",
+        "image": "media/personal/CubanMojitos.jpg",
+        "description": "I'm quite a family person, they mean a lot to me. I'm really grateful for the love and support they gave me over the years."
+    },
+
+    {
+        "id": "Nerdy",
+        "subject": "Nerdy",
+        "image": "media/personal/GameInn.jpg",
+        "description": "As a game dev it's near impossible to not be a nerd. I LOVE games, movies, series and anime! And I love being able to share that with other people too."
+    },
+
+    {
+        "id": "Competitive",
+        "subject": "Competive",
+        "image": "media/personal/BelgianGameAward.jpg",
+        "description": "I enjoy a healthy amount of competition. It gives me a lot of fulfillment achieving a goal after spending hours of commitment into something."
+    },
+
+    {
+        "id": "Culture",
+        "subject": "Culture",
+        "image": "media/personal/TakingPicture.jpg",
+        "description": "I've been raised surrounded by a lot of culture, and it has been a consistent factor throughout my life. I love traveling, visiting musea, watching performances, ..."
+    }
+]

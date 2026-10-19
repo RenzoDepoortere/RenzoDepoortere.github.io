@@ -1,0 +1,373 @@
+
+@font-face 
+{
+    font-family: 'Inter';
+    src: url("fonts/Inter-VariableFont_opsz,wght.ttf") format('truetype');
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body
+{
+    background-color: #EAE7DC;
+}
+
+.Page
+{
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Header
+{
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #CDC6A5;
+}
+
+.HeaderButtons
+{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.ContentContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.Footer
+{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-top: auto;
+    background-color: #696D7D;
+}
+
+.ProjectCard
+{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
+    overflow: hidden;
+}
+
+.ProjectCard:hover .ProjectOverlay 
+{
+    opacity: 1;
+}
+
+.ProjectCard:hover .ProjectThumbnail 
+{
+    transform: scale(1.08);
+}
+
+.ProjectCard:hover .TextProject 
+{
+    transform: translateY(0px);
+}
+
+.ProjectsContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 32px;
+    padding: 10px;
+}
+
+.ProjectThumbnail
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.ProjectOverlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #44444179;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Contacts
+{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.ContactPicture
+{
+    width: 32px;
+    height: 32px;
+    fill: white;
+    transition: fill 0.3s;
+}
+
+.ContactPicture:hover 
+{
+    fill: #CDC6A5; 
+}
+
+.ProjectBanner
+{
+    width: 540px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ProjectLinkContainer
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.SingleProjectLinkWrapper
+{
+    width: 32px;
+    height: 32px;
+}
+
+.ProjectLink
+{
+    width: 32px;
+    height: 32px;
+    fill: black;
+    transition: fill 0.3s;
+}
+
+.ProjectLink:hover 
+{
+    fill: rgb(74, 74, 74); 
+}
+
+.TextMainTitle
+{
+    font-size: 48px;
+    width: fit-content;
+    height: 58px; 
+    color: black;
+    font-weight: bolder;
+}
+
+.TextHeaderButton
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 32px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.TextHeaderButton:hover 
+{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+.TextHeader
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.TextSubtitle
+{
+    width: 100%;
+    height: fit-content;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.TextSubtitle_Left
+{
+    width: 100%;
+    height: fit-content;
+    font-size: 36px;
+    text-align: left;
+    color: black;
+}
+
+.TextDescription
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    white-space: pre-line;
+}
+
+.TextDescription_Left
+{
+    width: 100%;
+    font-size: 24px;
+    text-align: left; 
+    color: black;
+    white-space: pre-line;  
+}
+
+.TextDescription_LeftBottom
+{
+    flex: 1; 
+    font-size: 24px;
+    text-align: left; 
+    color: black;
+    white-space: pre-line;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.TextProject
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.TextAboutMeSubject 
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+.TextFooter
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 800px) 
+{
+    /* Stack the Header elements */
+    .Header 
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 24px;
+        gap: 16px;
+    }
+
+    /* Wrap the header links if the screen gets super narrow */
+    .HeaderButtons 
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .TextHeader
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Recenter the text for mobile */
+    .TextDescription_Left 
+    {
+        text-align: center;
+    }
+
+    .TextDescription_LeftBottom
+    {
+        text-align: center;
+    }
+
+    .TextSubtitle_Left
+    {
+        text-align: center;
+    }
+
+    /* Stack the Footer */
+    .Footer 
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 32px 24px;
+        gap: 16px;
+    }
+
+    /* Reduce the massive side padding on mobile */
+    .ContentContainer 
+    {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
