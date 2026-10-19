@@ -44,13 +44,21 @@ function showHighlights(projects)
 
 function setFilters(projects)
 {
-    // Set default category
-    const defaultCategory = "professional";
-    const initialProjects = projects.filter(p => p.category === defaultCategory);
+    // Load active category
+    const currentCategory = sessionStorage.getItem('projectsCategory') || "professional";
+
+    const buttons = document.querySelectorAll('.SectionBackground');
+    buttons.forEach(button => 
+    {
+        const cat = button.getAttribute('data-category');
+        if (cat === currentCategory) button.classList.add('active');
+        else button.classList.remove('active');
+    });
+
+    const initialProjects = projects.filter(p => p.category === currentCategory);
     showProjects(initialProjects);
 
     // Setup buttons
-    const buttons = document.querySelectorAll('.SectionBackground');
     buttons.forEach(button =>
     {
         button.addEventListener('click', () =>
@@ -62,6 +70,8 @@ function setFilters(projects)
 
             // Filter array and update
             const categoryToFilter = button.getAttribute('data-category');
+            sessionStorage.setItem('projectsCategory', categoryToFilter);
+
             const filteredProjects = projects.filter(p => p.category === categoryToFilter);
             showProjects(filteredProjects);
         });
