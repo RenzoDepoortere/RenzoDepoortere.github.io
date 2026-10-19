@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Renzo Depoortere</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/index.css">
+     <script src="javascript/ProjectsLoader.js" defer></script>
 </head>
 <body>
-    <div class="Page">
+    <div class="Page" id="Index">
         <div class="Header"> <!-- Not the cleanest way, but copying header for simplicity -->
             <p class="TextMainTitle">Portfolio</p>
             <div class="HeaderButtons">
@@ -22,26 +24,25 @@
             
             <div class = "Intro">
                 <div class = "Profile">
-                    <img src="images/ProfilePicture.jpg" alt="Picture of  Renzo" width="256px" height="256px" >
+                    <img src="media/personal/ProfilePicture.jpg" alt="Picture of  Renzo" width="256px" height="256px" >
                     <p class = "TextSubtitle">Renzo Depoortere</p>
                     <p class = "TextDescription">Game Developer</p>
                 </div>
                 <div class="Description">
                     <p class="TextHeader">Intro</p>
-                    <p class = TextDescription>This is very interesting text about my portfolio</p>
+                    <p class = TextDescription_Left>
+                        Hey there!
+                        I'm an aspiring game developer in the early stages of my career.
+                        Currently I take most joy out of <b>system programming</b>, but I also take a lot of interest in gameplay-,and graphics-programming.
+
+                        Having played games for almost as long as I can remember, I hope to be able to share the same excitement I experience(d) to the outside world.
+                    </p>
                 </div>
             </div>
 
             <div class="Projects">
                 <p class="TextSubtitle">Highlights</p>
-                <div class="ProjectsContainer">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                    <img class="ProjectThumbnail" src="images/Placeholder.png" alt="Placeholder image">
-                </div>
+                <div class="ProjectsContainer", id="ProjectsContainer"></div>
             </div>
         </div>
 

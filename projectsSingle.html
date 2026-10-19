@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{ProjectName} | Renzo Depoortere</title>    
+    <title id="Title"></title>    
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/projectsSingle.css">
+    <script src="javascript/ProjectsLoader.js" defer></script>
 </head>
 <body>
-    <div class="Page">
+    <div class="Page" id="ProjectsSingle">
         <div class="Header"> <!-- Not the cleanest way, but copying header for simplicity -->
             <p class="TextMainTitle">Portfolio</p>
             <div class="HeaderButtons">
@@ -19,44 +21,31 @@
         </div>
 
          <div class="ContentContainer">
-            <p class="TextHeader">{ProjectName}</p>
+            <p class="TextHeader" id="ProjectName"></p>
             <div class="SingleProjectSummary">
-                <img class="ProjectBanner" src="images/Placeholder.png" alt="Placeholder image">
-                <p class="TextDescription">Interesting summary about the project</p>
+                <div id="ProjectMediaContainer"></div>
+                <div class = "SummaryInformation">
+                    <ul class = "informationBits" id="informationBits"></ul>
+                    <p class="TextDescription_LeftBottom", id="ProjectSummary"></p>
+                </div>
             </div>
-            <div class="ProjectContributions">
+
+            <div class="SectionTextBlock">
                 <p class="TextSubtitle_Left">Contributions</p>
-                <p class="TextDescription">Description of my contributions</p>
+                <p class="TextDescription_Left" id="Contributions"></p>
             </div>
+            
             <div class="Separator"></div>
-            <div class="Highlight">
-                <p class="TextSubtitle_Left">{HighlightName}</p>
-                <div class="HighlightDescription">
-                    <p class="TextDescription_Left">Description/learnings/... of a specific moment</p>
-                    <img class="HighlightImage" src="images/Placeholder.png" alt="Placeholder image">
-                </div>
-            </div>
-            <div class="Highlight">
-                <p class="TextSubtitle_Left">{HighlightName}</p>
-                <div class="HighlightDescription">
-                    <p class="TextDescription_Left">Description/learnings/... of a specific moment</p>
-                    <img class="HighlightImage" src="images/Placeholder.png" alt="Placeholder image">
-                </div>
-            </div>
-            <div class="Highlight">
-                <p class="TextSubtitle_Left">{HighlightName}</p>
-                <div class="HighlightDescription">
-                    <p class="TextDescription_Left">Description/learnings/... of a specific moment</p>
-                    <img class="HighlightImage" src="images/Placeholder.png" alt="Placeholder image">
-                </div>
-            </div>
+            <div class="HighlightsContainer" id="HighlightsContainer"></div>
+
             <div class="Separator"></div>
-            <div class="ProjectVariaPictureContainer">
-                <img class="ProjectVariaPicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="ProjectVariaPicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="ProjectVariaPicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="ProjectVariaPicture" src="images/Placeholder.png" alt="Placeholder image">
+            <div class="SectionTextBlock">
+              <p class="TextSubtitle_Left">Experience</p>
+            <p class="TextDescription_Left" id="Experience"></p>
             </div>
+
+            <div class="Separator"></div>
+            <div class="VariaImages" id="VariaImages"></div>
          </div>
 
         <div class="Footer"> <!-- Not the cleanest way, but copying footer for simplicity -->
@@ -87,6 +76,17 @@
                 </a>
             </div>
         </div>
+
+        <div id="ImageModal" class="Modal">
+            <div class="ModalHeader">
+                <svg viewBox="0 0 640 640" class="ModalCloseButton" id="ModalClose">
+                    <path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/>
+                </svg>
+            </div>
+            <img class="ModalContent" id="ModalImage" src="" alt="Full screen image">
+            <video class="ModalContent" id="ModalVideo" src="" controls></video>
+        </div>
+
     </div>
 </body>
 </html>

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me | Renzo Depoortere</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/aboutMe.css">
+    <script src="javascript/AboutMeLoader.js" defer></script>
 </head>
 <body>
-    <div class="Page">
+    <div class="Page" id="AboutMe">
        <div class="Header"> <!-- Not the cleanest way, but copying header for simplicity -->
             <p class="TextMainTitle">Portfolio</p>
             <div class="HeaderButtons">
@@ -20,16 +22,20 @@
 
         <div class="ContentContainer">
             <p class="TextHeader">About me</p>
-            <p class="TextDescription">Interesting text about myself as a person</p>
-            <div class="AboutMePictureContainer">
-                <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">
-                <img class="AboutMePicture" src="images/Placeholder.png" alt="Placeholder image">
-            </div>
+            <p class="TextDescription_Left">
+                I'm Renzo Depoortere, born in 2003 from a Cuban mother and a Belgian father, and currently living in Belgium. 
+                My native language is Dutch, but I'm also fluent in English, know some basic French and beginner Spanish (however my comprehension is stronger than my speaking). 
+                I can be described as a relaxed, positive, focused and empathetic person.
+
+                While my main hobbies consist of gaming, watching series/movies, playing piano and doing sports; I also enjoy switching things up every now and then. In the sports area I have done basketball, handball, volleyball, boxing, ... Besides that I have also spent time drawing, doing archery, playing guitar, crafting, ...
+                    
+                My dream as a game developer is to be able to create a game that brings a unique experience to the world, to be remembered for years. Something that inspires and excites people to discuss, to create art/cosplays/fan-games, ...
+
+            </p>
+            <div class="AboutMePictureContainer"></div>
         </div>
 
-         <div class="Footer"> <!-- Not the cleanest way, but copying footer for simplicity -->
+        <div class="Footer"> <!-- Not the cleanest way, but copying footer for simplicity -->
             <p class="TextFooter">©2026 by Renzo Depoortere</p>
             <div class="Contacts">
                 <a href="https://www.linkedin.com/in/renzo-depoortere-8077b6225/" target="_blank">
@@ -57,6 +63,20 @@
                 </a>
             </div>
         </div>
+
+        <div id="AboutMeModal" class="AboutMeModal">
+                <div class="AboutMeModalContent">
+                <!-- Close Button -->
+                <svg viewBox="0 0 640 640" class="AboutMeModalClose" id="CloseModal">
+                    <path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/>
+                </svg>
+         
+                <!-- Dynamic Image and Text -->
+                <img id="ModalImage" src="" alt="Experience">
+                <p id="ModalDescription" class="ModalText"></p>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
