@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="Favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="17.081048"
+     inkscape:cx="12.294327"
+     inkscape:cy="13.611577"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 16 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="32 : 16 : 1"
+       inkscape:persp3d-origin="16 : 10.666667 : 1"
+       id="perspective2" />
+  </defs>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#f3b90c;stroke-width:1.28834;fill-opacity:1"
+       id="path1"
+       cx="-16"
+       cy="16"
+       transform="scale(-1,1)"
+       r="14" />
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       d="M 6.0853816,18.049159 H 26.080207 c 0,0 -0.331177,9.686935 -9.811126,9.645537 C 6.9701861,27.65409 6.0853816,18.049159 6.0853816,18.049159 Z"
+       id="path8"
+       sodipodi:nodetypes="ccsc" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1"
+       id="path9"
+       cx="10.421734"
+       cy="11.198577"
+       rx="2.4217336"
+       ry="4.6985769" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:0.999952"
+       id="ellipse9"
+       cx="21.578501"
+       cy="11.198577"
+       rx="2.4215"
+       ry="4.6985769" />
+  </g>
+</svg>
