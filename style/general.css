@@ -139,6 +139,17 @@ body
     transition: opacity 0.3s ease;
 }
 
+.ProjectCompanyLogo
+{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
 .Contacts
 {
     width: fit-content;

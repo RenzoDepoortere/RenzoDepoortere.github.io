@@ -8,6 +8,7 @@
         "youtubeId": "9iY5yQuVsdA",
         "videoSource": "",
         "banner": "",
+        "company": "OISOI",
         "summary": "Painting PC is a PC-port of OISOI's Painting VR game. The game keeps a handful of the game's brushes and its realistic painting experience. Additionally the game includes a commission system where people ask you to paint something specific whereafter you gain currency and followers that progress you through the game.",
         "informationBits":
         [
@@ -66,6 +67,7 @@
         "youtubeId": "h3TrGxojF_w",
         "videoSource": "",
         "banner": "",
+        "company": "OISOI",
         "summary": "Painting VR is the most rated painting simulation app on the Meta VR platform. It has an extensive set of brushes and tools and allows for highly realistic brush strokes. Players can also enjoy painting in a handful of diverse environments. The game gets frequently updated with new features, brushes and tools.",
         "informationBits":
         [
@@ -131,6 +133,7 @@
         "youtubeId": "kGtrq4jilpM",
         "videoSource": "",
         "banner": "",
+        "company": "OISOI",
         "summary": "Wait What's That (WWT) is a multiplayer VR pictionary game where the drawer needs to draw a word with a random twist and tool. These can range from drawing on a tv with a rubber chicken, to spraying on a canvas which erases your drawn lines after some time.",
         "informationBits":
         [
@@ -190,6 +193,7 @@
         "youtubeId": "PQdPMMwe2SI",
         "videoSource": "",
         "banner": "",
+        "company": "OISOI",
         "summary": "Vandalizer is a high quality multiplayer VR grafitti game where you can spray paint on different objects. Each object is contained within a card which you can unlock by playing.",
         "informationBits":
         [
@@ -264,9 +268,14 @@
         "youtubeId": "ZrZuJEyop2E",
         "videoSource": "",
         "banner": "",
+        "company": "DAE",
         "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to get through the level. Every time the player dies they gain power-ups to help progress the level, at the cost of a lower final score.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: February 2024",
                 "link": ""
@@ -312,9 +321,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/digDug/DigDug_Banner.gif",
+        "company": "DAE",
         "summary": "In Dig Dug you need to defeat all the monsters to be able to progress towards the next level. This is possible by either blowing them up using your air pump, or crushing them underneath a falling rock. This project is a recreation of the original game made by Namco.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -360,9 +374,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "company": "DAE",
         "summary": "Harry Potter and the Chamber of Secrets is a simple demo recreation of the original game released by EA. In this game you solve simple puzzles and defeat enemies to progress through the level and reach the final star.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -401,9 +420,14 @@
         "youtubeId": "IxLCRjZQHnE",
         "videoSource": "",
         "banner": "",
+        "company": "DAE",
         "summary": "Medieval Madness is the first big group project I worked on. It's a 4-player couch game where every person controls a ragdoll-like character. The game is similar to Super Smash Bros. where you hit players multiple times to rack up damage. The more damage they have, the further they launch when hit. The goal is to be the last man standing by pushing every other player into spikes on the border of the map.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -442,9 +466,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "company": "DAE",
         "summary": "This project demonstrates a chasing algorithm which could be used for in-game AI. It was based on a research paper and uses an influence map at its core. This map would decide where the NPC should look when chasing the player without giving away the exact position. This would allow for more natural feeling chases.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: December 2022",
                 "link": ""

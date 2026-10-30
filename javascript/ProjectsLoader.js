@@ -27,12 +27,18 @@ function showHighlights(projects)
         card.href = `projectsSingle.html?id=${element.id}`;
         card.className = 'ProjectCard';
 
+        // Logo
+        const logoHTML = element.company
+        ? `<img class="ProjectCompanyLogo" src="${getCompanyLogo(element.company)}" alt="Company Logo">`
+        : '';
+
         // Build image and overlay
         const innerHTML = 
             `
             <img class="ProjectThumbnail" src="${element.thumbnail}" alt="${element.name}"> 
             <div class="ProjectOverlay"> 
                 <p class="TextProject">${element.name}</p> 
+                ${logoHTML}
             </div>
         `;
         card.innerHTML = innerHTML;
@@ -91,12 +97,18 @@ function showProjects(projects)
         card.href = `projectsSingle.html?id=${element.id}`;
         card.className = 'ProjectCard';
 
+        // Logo
+        const logoHTML = element.company
+        ? `<img class="ProjectCompanyLogo" src="${getCompanyLogo(element.company)}" alt="Company Logo">`
+        : '';
+
         // Build image and overlay
         const innerHTML = 
             `
             <img class="ProjectThumbnail" src="${element.thumbnail}" alt="${element.name}"> 
             <div class="ProjectOverlay"> 
                 <p class="TextProject">${element.name}</p> 
+                ${logoHTML}
             </div>
         `;
         card.innerHTML = innerHTML;
@@ -331,6 +343,24 @@ function showSingleProject(projects)
                 closeMedia();
         });
     }
+}
+
+function getCompanyLogo(companyName)
+{
+    logoFileName = "";
+    
+    switch (companyName)
+    {
+        case "DAE":
+            logoFileName = "media/companies/DAE_Logo.png";
+        break;
+
+        case "OISOI":
+            logoFileName = "media/companies/OISOI_Logo.png";
+        break;
+    }
+
+    return logoFileName;
 }
 
 init();
