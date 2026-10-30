@@ -32,7 +32,7 @@
                 "link": "https://store.steampowered.com/app/4521680/Painting_PC/"
             }
         ],
-        "contributions": "For Painting PC, besides a quick hand here and there during polish, I was the only programmer working on the project. Thus besides the already existing brushes and painting system, I worked on every aspect of the game.",
+        "contributions": "For Painting PC I was the lead programmer working on the project. Thus besides the already existing brushes and painting system which came over from Painting VR, I worked on every aspect of the game.",
         "highlights":
         [
             {
@@ -48,7 +48,7 @@
                 "video": ""
             }
         ],
-        "experience": "It was quite exciting working on Painting PC, as I was the sole programmer I dealt with a lot of responsability. What I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't quite clear yet, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
+        "experience": "It was quite exciting working on Painting PC, as I was the lead programmer I dealt with a lot of responsability. What I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't quite clear yet, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
         "variaImages":
         [
             "media/projects/paintingPC/PPC_Varia_1.jpg",
@@ -159,6 +159,12 @@
         "highlights":
         [
             {
+                "title": "Best Belgian multiplayer game",
+                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
+                "image": "media/personal/BelgianGameAward.jpg",
+                "video":""
+            },
+            {
                 "title": "Social lobby",
                 "description": "To help players socialize and make friends, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine and made sure players correctly connected to it.",
                 "image": "media/projects/WWT/WWT_SocialLobby.png",
@@ -169,12 +175,6 @@
                 "description": "I was also in lead for adding handtracking to the game. Besides mapping the player's fingers to the in-game character's finger, they also needed to be synchronised over the network. So some time was spent making sure the syncing didn't take too much bandwidth, while still making sure the player's intended gestures where being showcased correctly.",
                 "image": "media/projects/WWT/WWT_HandtrackingThumb.png",
                 "video":"media/projects/WWT/WWT_Handtracking.mp4"
-            },
-            {
-                "title": "Best Belgian multiplayer game",
-                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
-                "image": "media/personal/BelgianGameAward.jpg",
-                "video":""
             }
         ],
         "experience": "This was the first time I worked on a multiplayer project. I already had some basics down by fiddling around during my free time, but this took me a bit further into the discipline. It was quite an eye opener for me since there were many aspects you needed to take into account when programming; everything needed to be synchronised but still feel responsive, slower internet needed to be taken care of, what happens if someone disconnects, ...",
