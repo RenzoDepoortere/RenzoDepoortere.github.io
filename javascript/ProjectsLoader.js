@@ -1,16 +1,25 @@
 async function init()
 {
     // Get data
-    const response = await fetch('data/Projects.json');
-    const projects = await response.json();
+    const [projectsResponse, careerResponse] = await Promise.all
+    ([
+        fetch('data/Projects.json'),
+        fetch('data/Career.json')
+    ]);
+    const projects = await projectsResponse.json();
+    const companies = await careerResponse.json();
 
     // Fill corresponding HTML
-    if (document.getElementById('Index')) showHighlights(projects);
-    else if (document.getElementById('Projects')) setFilters(projects);
+    if (document.getElementById('Index')) 
+    {
+        showHighlights(projects, companies);
+        loadTimeline(companies);
+    }
+    else if (document.getElementById('Projects')) setFilters(projects, companies);
     else if (document.getElementById('ProjectsSingle')) showSingleProject(projects);
 }
 
-function showHighlights(projects)
+function showHighlights(projects, companies)
 {
     const projectContainer = document.getElementById('ProjectsContainer');
     projectContainer.innerHTML = '';
@@ -28,9 +37,15 @@ function showHighlights(projects)
         card.className = 'ProjectCard';
 
         // Logo
-        const logoHTML = element.company
-        ? `<img class="ProjectCompanyLogo" src="${getCompanyLogo(element.company)}" alt="Company Logo">`
-        : '';
+        logoHTML = '';
+        if (element.companyId)
+        {
+            const company = companies.find(item => item.id === element.companyId);
+            const companyLogo = company ? company.logo : "";
+
+            if (companyLogo != "")
+                logoHTML = `<img class="ProjectCompanyLogo" src="${companyLogo}" alt="Company Logo">`;
+        }
 
         // Build image and overlay
         const innerHTML = 
@@ -47,8 +62,37 @@ function showHighlights(projects)
         projectContainer.appendChild(card);
     });
 }
+function loadTimeline(companies)
+{
+    const timelineContainer = document.getElementById('TimelineContainer');
+    if (!timelineContainer) return;
+    
+    timelineContainer.innerHTML = '';
 
-function setFilters(projects)
+    companies.forEach(item => 
+    {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'TimelineItem';
+
+        const logoHTML = item.logo 
+        ? `<img class="TimelineLogo" src="${item.logo}" alt="${item.company} Logo">` 
+        : '';
+
+        itemDiv.innerHTML = 
+        `
+            <div class="TimelineContent">
+                <span class="TimelinePeriod">${item.period}</span>
+                <h4 class="TimelineCompany">${item.company}</h4>
+                <h3 class="TimelineRole">${item.role}</h3>
+            </div>
+            ${logoHTML}
+        `;
+
+        timelineContainer.appendChild(itemDiv);
+    });
+} 
+
+function setFilters(projects, companies)
 {
     // Load active category
     const currentCategory = sessionStorage.getItem('projectsCategory') || "professional";
@@ -62,7 +106,7 @@ function setFilters(projects)
     });
 
     const initialProjects = projects.filter(p => p.category === currentCategory);
-    showProjects(initialProjects);
+    showProjects(initialProjects, companies);
 
     // Setup buttons
     buttons.forEach(button =>
@@ -79,11 +123,11 @@ function setFilters(projects)
             sessionStorage.setItem('projectsCategory', categoryToFilter);
 
             const filteredProjects = projects.filter(p => p.category === categoryToFilter);
-            showProjects(filteredProjects);
+            showProjects(filteredProjects, companies);
         });
     });
 }
-function showProjects(projects)
+function showProjects(projects, companies)
 {
     const gridContainer = document.querySelector('.ProjectsContainer');
     gridContainer.innerHTML = ''; // Empty it just in case
@@ -98,9 +142,15 @@ function showProjects(projects)
         card.className = 'ProjectCard';
 
         // Logo
-        const logoHTML = element.company
-        ? `<img class="ProjectCompanyLogo" src="${getCompanyLogo(element.company)}" alt="Company Logo">`
-        : '';
+        logoHTML = '';
+        if (element.companyId)
+        {
+            const company = companies.find(item => item.id ===  element.companyId);
+            const companyLogo = company ? company.logo : "";
+
+            if (companyLogo != "")
+                logoHTML = `<img class="ProjectCompanyLogo" src="${companyLogo}" alt="Company Logo">`;
+        }
 
         // Build image and overlay
         const innerHTML = 
@@ -345,11 +395,11 @@ function showSingleProject(projects)
     }
 }
 
-function getCompanyLogo(companyName)
+function getCompanyLogo(companyId)
 {
     logoFileName = "";
     
-    switch (companyName)
+    switch (companyId)
     {
         case "DAE":
             logoFileName = "media/companies/DAE_Logo.png";

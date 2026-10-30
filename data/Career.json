@@ -1,0 +1,16 @@
+[
+    {
+        "id": "OISOI",
+        "period": "2024 - Present",
+        "company": "OISOI",
+        "role": "Intern and Junior Game Developer",
+        "logo": "media/companies/OISOI_Logo.png"
+    },
+    {
+        "id": "DAE",
+        "period": "2021 - 2024",
+        "company": "Digital Arts and Entertainment",
+        "role": "Student",
+        "logo": "media/companies/DAE_Logo.png"
+    }
+]
