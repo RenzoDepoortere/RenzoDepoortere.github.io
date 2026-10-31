@@ -51,14 +51,14 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex: 1;                      /* Fills the left side space */
+    flex: 1;                 
 }
 
 .TimelineLogo
 {
-    width: 64px;                  /* Adjust size to fit your design */
+    width: 64px;                 
     height: 64px;
-    object-fit: contain;          /* Keeps the logo proportions correct */
+    object-fit: contain;        
     flex-shrink: 0;
 }
 
@@ -80,7 +80,7 @@
     flex-direction: column;
     gap: 32px;
     padding-left: 24px;
-    border-left: 3px solid #CDC6A5; /* The vertical line */
+    border-left: 3px solid #CDC6A5; 
     margin-left: 8px;
 }
 
@@ -99,7 +99,6 @@
     transition: transform 0.2s ease;
 }
 
-/* Little dot on the timeline track */
 .TimelineItem::before
 {
     content: '';
@@ -138,7 +137,6 @@
 
 @media (max-width: 800px) 
 {
-    /* Stack the Profile picture and Intro text */
     .Intro 
     {
         display: flex;

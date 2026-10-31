@@ -335,7 +335,6 @@ body
 
 @media (max-width: 800px) 
 {
-    /* Stack the Header elements */
     .Header 
     {
         flex-direction: column;
@@ -344,7 +343,6 @@ body
         gap: 16px;
     }
 
-    /* Wrap the header links if the screen gets super narrow */
     .HeaderButtons 
     {
         flex-wrap: wrap;
@@ -357,7 +355,6 @@ body
         text-align: center;
     }
 
-    /* Recenter the text for mobile */
     .TextDescription_Left 
     {
         text-align: center;
@@ -373,7 +370,6 @@ body
         text-align: center;
     }
 
-    /* Stack the Footer */
     .Footer 
     {
         flex-direction: column;
@@ -382,7 +378,6 @@ body
         gap: 16px;
     }
 
-    /* Reduce the massive side padding on mobile */
     .ContentContainer 
     {
         padding-left: 24px;

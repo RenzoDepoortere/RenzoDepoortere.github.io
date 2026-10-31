@@ -124,8 +124,8 @@
 .VariaImageCard 
 {
     position: relative;
-    width: 100%;             /* Fills the grid column width */
-    aspect-ratio: 1 / 1;     /* Maintains 1:1 square ratio */
+    width: 100%;           
+    aspect-ratio: 1 / 1;     
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -169,7 +169,7 @@
 
 .ModalContentBox 
 {
-    position: relative; /* Crucial: anchors the close button inside this box */
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,14 +184,14 @@
 
 .ModalCloseButton 
 {
-    position: absolute; /* Anchored relative to .ModalContentBox */
+    position: absolute; 
     top: 16px;
     right: 16px;
     width: 40px;
     height: 40px;
     fill: white;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.6); /* Neat badge background */
+    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 50%;
     padding: 8px;
     z-index: 10;
@@ -222,45 +222,39 @@
 
 @media (max-width: 800px) 
 {
-    /* 1. Stack the top summary (Image and info) vertically */
     .SingleProjectSummary 
     {
         flex-direction: column;
         height: auto;
-        gap: 32px; /* Reduce the massive 128px gap for mobile */
+        gap: 32px;
     }
 
-    /* 2. Make the main banner image scale to the phone screen */
     .ProjectBannerImage 
     {
         width: 100%;
         height: auto;
-        max-height: 350px; /* Prevents it from taking up the entire screen height */
+        max-height: 350px;
     }
 
-    /* 3. Reduce the gap inside the info text slightly */
     .SummaryInformation 
     {
         gap: 32px;
     }
 
-    /* 4. Stack the Highlight descriptions and their images/videos */
     .HighlightDescription 
     {
         flex-direction: column;
         gap: 24px;
     }
 
-    /* 5. Allow highlight media to fill the phone width */
     .HighlightImage,
     .HighlightVideoWrapper 
     {
         width: 100%;
         height: auto;
-        aspect-ratio: 16 / 9; /* Keeps a nice cinematic ratio when scaling */
+        aspect-ratio: 16 / 9;
     }
 
-    /* 8. Move the close button slightly closer to the edge on small screens */
     .ModalHeader 
     {
         top: 16px;

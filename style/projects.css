@@ -48,17 +48,14 @@
 {
     .ProjectSections 
     {
-        /* Switch from Grid to Flexbox so the buttons can wrap to a new line if needed */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
-        /* Remove the fixed height so the container can grow when buttons wrap */
+
         height: auto;
         gap: 12px;
     }
 
-    /* Make the buttons a bit more compact for touch screens */
     .SectionBackground 
     {
         padding: 8px 20px;

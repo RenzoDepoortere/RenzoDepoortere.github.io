@@ -197,7 +197,7 @@ function showSingleProject(projects)
         const mediaContainer = document.getElementById('ProjectMediaContainer');
         if (currentProject.youtubeId) 
         {
-            // 1. If we have a YouTube ID, build an iframe
+            // If we have a YouTube ID, build an iframe
             mediaContainer.innerHTML = `
                 <iframe class="ProjectBannerImage" 
                         src="https://www.youtube.com/embed/${currentProject.youtubeId}" 
@@ -208,7 +208,7 @@ function showSingleProject(projects)
         } 
         else if (currentProject.videoSource) 
         {
-            // 2. If we have a local video file, build a video tag
+            // If we have a local video file, build a video tag
             mediaContainer.innerHTML = `
                 <video class="ProjectBannerImage" autoplay loop muted playsinline controls>
                     <source src="${currentProject.videoSource}" type="video/mp4">
@@ -217,7 +217,7 @@ function showSingleProject(projects)
         } 
         else 
         {
-            // 3. Fallback to standard image if no video is available
+            // Fallback to standard image if no video is available
             mediaContainer.innerHTML = `
                 <img class="ProjectBannerImage" src="${currentProject.banner}" alt="${currentProject.name}">`;
         }
