@@ -171,16 +171,23 @@
 
 .ModalCloseButton 
 {
-    width: 48px;
-    height: 48px;
+   position: absolute; /* Now relative to .AboutMeModalContent */
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
     fill: white;
     cursor: pointer;
-    transition: fill 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6); /* Creates a neat badge background */
+    border-radius: 50%;
+    padding: 8px;
+    transition: fill 0.2s, background-color 0.2s;
 }
 
 .ModalCloseButton:hover 
 {
     fill: #CDC6A5;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .ModalContent 
