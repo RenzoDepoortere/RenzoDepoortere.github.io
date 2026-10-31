@@ -120,7 +120,7 @@
                 "video":""
             }
         ],
-        "experience": "Painting VR was the first bigger project I worked on, it was also the first released project I had to work. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
+        "experience": "Painting VR was the first bigger project I worked on, it was also the first released project I had to work on. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
         "variaImages":[]
     },
 
@@ -220,7 +220,7 @@
         ],
         "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
         "highlights": [],
-        "experience": "The initial idea of Vandalizer was quite ambitious, sadly enough we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
+        "experience": "The initial idea of Vandalizer was quite ambitious, unfortunately we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
         "variaImages":
         [
             "media/projects/vandalizer/Vandalizer_Varia_1.jpg",
@@ -269,7 +269,7 @@
         "videoSource": "",
         "banner": "",
         "companyId": "DAE",
-        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to get through the level. Every time the player dies they gain power-ups to help progress the level, at the cost of a lower final score.",
+        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to navigate the stage. Every time the player dies they gain power-ups to help progress through the level, at the cost of a lower final score.",
         "informationBits":
         [
             {
