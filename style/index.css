@@ -10,7 +10,8 @@
 
 .Profile
 {
-    width: 364px;
+    width: 100%;
+    max-width: 364px;
     height: fit-content;
     display: flex;
     flex-direction: column;
