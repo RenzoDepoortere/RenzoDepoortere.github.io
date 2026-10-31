@@ -1,16 +1,25 @@
 async function init()
 {
     // Get data
-    const response = await fetch('data/Projects.json');
-    const projects = await response.json();
+    const [projectsResponse, careerResponse] = await Promise.all
+    ([
+        fetch('data/Projects.json'),
+        fetch('data/Career.json')
+    ]);
+    const projects = await projectsResponse.json();
+    const companies = await careerResponse.json();
 
     // Fill corresponding HTML
-    if (document.getElementById('Index')) showHighlights(projects);
-    else if (document.getElementById('Projects')) setFilters(projects);
+    if (document.getElementById('Index')) 
+    {
+        showHighlights(projects, companies);
+        loadTimeline(companies);
+    }
+    else if (document.getElementById('Projects')) setFilters(projects, companies);
     else if (document.getElementById('ProjectsSingle')) showSingleProject(projects);
 }
 
-function showHighlights(projects)
+function showHighlights(projects, companies)
 {
     const projectContainer = document.getElementById('ProjectsContainer');
     projectContainer.innerHTML = '';
@@ -27,12 +36,24 @@ function showHighlights(projects)
         card.href = `projectsSingle.html?id=${element.id}`;
         card.className = 'ProjectCard';
 
+        // Logo
+        logoHTML = '';
+        if (element.companyId)
+        {
+            const company = companies.find(item => item.id === element.companyId);
+            const companyLogo = company ? company.logo : "";
+
+            if (companyLogo != "")
+                logoHTML = `<img class="ProjectCompanyLogo" src="${companyLogo}" alt="Company Logo">`;
+        }
+
         // Build image and overlay
         const innerHTML = 
             `
             <img class="ProjectThumbnail" src="${element.thumbnail}" alt="${element.name}"> 
             <div class="ProjectOverlay"> 
                 <p class="TextProject">${element.name}</p> 
+                ${logoHTML}
             </div>
         `;
         card.innerHTML = innerHTML;
@@ -41,8 +62,37 @@ function showHighlights(projects)
         projectContainer.appendChild(card);
     });
 }
+function loadTimeline(companies)
+{
+    const timelineContainer = document.getElementById('TimelineContainer');
+    if (!timelineContainer) return;
+    
+    timelineContainer.innerHTML = '';
 
-function setFilters(projects)
+    companies.forEach(item => 
+    {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'TimelineItem';
+
+        const logoHTML = item.logo 
+        ? `<img class="TimelineLogo" src="${item.logo}" alt="${item.company} Logo">` 
+        : '';
+
+        itemDiv.innerHTML = 
+        `
+            <div class="TimelineContent">
+                <span class="TimelinePeriod">${item.period}</span>
+                <h4 class="TimelineCompany">${item.company}</h4>
+                <h3 class="TimelineRole">${item.role}</h3>
+            </div>
+            ${logoHTML}
+        `;
+
+        timelineContainer.appendChild(itemDiv);
+    });
+} 
+
+function setFilters(projects, companies)
 {
     // Load active category
     const currentCategory = sessionStorage.getItem('projectsCategory') || "professional";
@@ -56,7 +106,7 @@ function setFilters(projects)
     });
 
     const initialProjects = projects.filter(p => p.category === currentCategory);
-    showProjects(initialProjects);
+    showProjects(initialProjects, companies);
 
     // Setup buttons
     buttons.forEach(button =>
@@ -73,11 +123,11 @@ function setFilters(projects)
             sessionStorage.setItem('projectsCategory', categoryToFilter);
 
             const filteredProjects = projects.filter(p => p.category === categoryToFilter);
-            showProjects(filteredProjects);
+            showProjects(filteredProjects, companies);
         });
     });
 }
-function showProjects(projects)
+function showProjects(projects, companies)
 {
     const gridContainer = document.querySelector('.ProjectsContainer');
     gridContainer.innerHTML = ''; // Empty it just in case
@@ -91,12 +141,24 @@ function showProjects(projects)
         card.href = `projectsSingle.html?id=${element.id}`;
         card.className = 'ProjectCard';
 
+        // Logo
+        logoHTML = '';
+        if (element.companyId)
+        {
+            const company = companies.find(item => item.id ===  element.companyId);
+            const companyLogo = company ? company.logo : "";
+
+            if (companyLogo != "")
+                logoHTML = `<img class="ProjectCompanyLogo" src="${companyLogo}" alt="Company Logo">`;
+        }
+
         // Build image and overlay
         const innerHTML = 
             `
             <img class="ProjectThumbnail" src="${element.thumbnail}" alt="${element.name}"> 
             <div class="ProjectOverlay"> 
                 <p class="TextProject">${element.name}</p> 
+                ${logoHTML}
             </div>
         `;
         card.innerHTML = innerHTML;
@@ -135,7 +197,7 @@ function showSingleProject(projects)
         const mediaContainer = document.getElementById('ProjectMediaContainer');
         if (currentProject.youtubeId) 
         {
-            // 1. If we have a YouTube ID, build an iframe
+            // If we have a YouTube ID, build an iframe
             mediaContainer.innerHTML = `
                 <iframe class="ProjectBannerImage" 
                         src="https://www.youtube.com/embed/${currentProject.youtubeId}" 
@@ -146,7 +208,7 @@ function showSingleProject(projects)
         } 
         else if (currentProject.videoSource) 
         {
-            // 2. If we have a local video file, build a video tag
+            // If we have a local video file, build a video tag
             mediaContainer.innerHTML = `
                 <video class="ProjectBannerImage" autoplay loop muted playsinline controls>
                     <source src="${currentProject.videoSource}" type="video/mp4">
@@ -155,7 +217,7 @@ function showSingleProject(projects)
         } 
         else 
         {
-            // 3. Fallback to standard image if no video is available
+            // Fallback to standard image if no video is available
             mediaContainer.innerHTML = `
                 <img class="ProjectBannerImage" src="${currentProject.banner}" alt="${currentProject.name}">`;
         }
@@ -331,6 +393,24 @@ function showSingleProject(projects)
                 closeMedia();
         });
     }
+}
+
+function getCompanyLogo(companyId)
+{
+    logoFileName = "";
+    
+    switch (companyId)
+    {
+        case "DAE":
+            logoFileName = "media/companies/DAE_Logo.png";
+        break;
+
+        case "OISOI":
+            logoFileName = "media/companies/OISOI_Logo.png";
+        break;
+    }
+
+    return logoFileName;
 }
 
 init();

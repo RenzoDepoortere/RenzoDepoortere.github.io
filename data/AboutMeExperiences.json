@@ -15,7 +15,7 @@
 
     {
         "id": "Competitive",
-        "subject": "Competive",
+        "subject": "Competitive",
         "image": "media/personal/BelgianGameAward.jpg",
         "description": "I enjoy a healthy amount of competition. It gives me a lot of fulfillment achieving a goal after spending hours of commitment into something."
     },
@@ -23,7 +23,7 @@
     {
         "id": "Culture",
         "subject": "Culture",
-        "image": "media/personal/TakingPicture.jpg",
-        "description": "I've been raised surrounded by a lot of culture, and it has been a consistent factor throughout my life. I love traveling, visiting musea, watching performances, ..."
+        "image": "media/personal/Colosseum.jpg",
+        "description": "I was raised surrounded by a lot of culture, and it has been a consistent factor throughout my life. I love traveling and experiencing everything the world has to offer."
     }
 ]

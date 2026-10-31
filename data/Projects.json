@@ -8,6 +8,7 @@
         "youtubeId": "9iY5yQuVsdA",
         "videoSource": "",
         "banner": "",
+        "companyId": "OISOI",
         "summary": "Painting PC is a PC-port of OISOI's Painting VR game. The game keeps a handful of the game's brushes and its realistic painting experience. Additionally the game includes a commission system where people ask you to paint something specific whereafter you gain currency and followers that progress you through the game.",
         "informationBits":
         [
@@ -32,7 +33,7 @@
                 "link": "https://store.steampowered.com/app/4521680/Painting_PC/"
             }
         ],
-        "contributions": "For Painting PC, besides a quick hand here and there during polish, I was the only programmer working on the project. Thus besides the already existing brushes and painting system, I worked on every aspect of the game.",
+        "contributions": "For Painting PC I was the lead programmer working on the project. Thus besides the already existing brushes and painting system which came over from Painting VR, I worked on every aspect of the game.",
         "highlights":
         [
             {
@@ -48,7 +49,7 @@
                 "video": ""
             }
         ],
-        "experience": "It was quite exciting working on Painting PC, as I was the sole programmer I dealt with a lot of responsability. What I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't quite clear yet, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
+        "experience": "It was quite exciting working on Painting PC, as I was the lead programmer I dealt with a lot of responsability. What I learned most out of this project was to build modular. Especially during its first few weeks where the vision of what the game would become wasn't quite clear yet, I had to make features that were configurable enough to be build further upon later. This was also the biggest hurdle I had during development.",
         "variaImages":
         [
             "media/projects/paintingPC/PPC_Varia_1.jpg",
@@ -66,6 +67,7 @@
         "youtubeId": "h3TrGxojF_w",
         "videoSource": "",
         "banner": "",
+        "companyId": "OISOI",
         "summary": "Painting VR is the most rated painting simulation app on the Meta VR platform. It has an extensive set of brushes and tools and allows for highly realistic brush strokes. Players can also enjoy painting in a handful of diverse environments. The game gets frequently updated with new features, brushes and tools.",
         "informationBits":
         [
@@ -118,7 +120,7 @@
                 "video":""
             }
         ],
-        "experience": "Painting VR was the first bigger project I worked on, it was also the first released project I had to work. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
+        "experience": "Painting VR was the first bigger project I worked on, it was also the first released project I had to work on. I remember being intimidated by the size of the project and being scared to do a lot of changes as to not break the whole game. One of the major learning points I got from working on this was to make sure that the updates you push don't break the game for the players on the live version.",
         "variaImages":[]
     },
 
@@ -131,6 +133,7 @@
         "youtubeId": "kGtrq4jilpM",
         "videoSource": "",
         "banner": "",
+        "companyId": "OISOI",
         "summary": "Wait What's That (WWT) is a multiplayer VR pictionary game where the drawer needs to draw a word with a random twist and tool. These can range from drawing on a tv with a rubber chicken, to spraying on a canvas which erases your drawn lines after some time.",
         "informationBits":
         [
@@ -159,6 +162,12 @@
         "highlights":
         [
             {
+                "title": "Best Belgian multiplayer game",
+                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
+                "image": "media/personal/BelgianGameAward.jpg",
+                "video":""
+            },
+            {
                 "title": "Social lobby",
                 "description": "To help players socialize and make friends, we decided to implement a social lobby hosted by a dedicated server. I worked on setting up the server on a virtual machine and made sure players correctly connected to it.",
                 "image": "media/projects/WWT/WWT_SocialLobby.png",
@@ -169,12 +178,6 @@
                 "description": "I was also in lead for adding handtracking to the game. Besides mapping the player's fingers to the in-game character's finger, they also needed to be synchronised over the network. So some time was spent making sure the syncing didn't take too much bandwidth, while still making sure the player's intended gestures where being showcased correctly.",
                 "image": "media/projects/WWT/WWT_HandtrackingThumb.png",
                 "video":"media/projects/WWT/WWT_Handtracking.mp4"
-            },
-            {
-                "title": "Best Belgian multiplayer game",
-                "description": "WWT got nominated to, and won, the Best Belgian Multiplayer Game Award in 2025. It was quite the honor to be able to receive this award together with the team. I hope it's the first of many more awards to come!",
-                "image": "media/personal/BelgianGameAward.jpg",
-                "video":""
             }
         ],
         "experience": "This was the first time I worked on a multiplayer project. I already had some basics down by fiddling around during my free time, but this took me a bit further into the discipline. It was quite an eye opener for me since there were many aspects you needed to take into account when programming; everything needed to be synchronised but still feel responsive, slower internet needed to be taken care of, what happens if someone disconnects, ...",
@@ -190,6 +193,7 @@
         "youtubeId": "PQdPMMwe2SI",
         "videoSource": "",
         "banner": "",
+        "companyId": "OISOI",
         "summary": "Vandalizer is a high quality multiplayer VR grafitti game where you can spray paint on different objects. Each object is contained within a card which you can unlock by playing.",
         "informationBits":
         [
@@ -216,7 +220,7 @@
         ],
         "contributions": "I helped develop this game during its earlier phases, back when we still had a different vision of the game. I mainly worked on smaller features and fixing bugs, sadly not a lot of these features made it through the final game.",
         "highlights": [],
-        "experience": "The initial idea of Vandalizer was quite ambitious, sadly enough we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
+        "experience": "The initial idea of Vandalizer was quite ambitious, unfortunately we had to cut a lot of content. That too is part of game development and is something I have to deal with. Personally I don't mind it as much as long as I've gained something valuable out of it, be it either experience, inspiration, ...",
         "variaImages":
         [
             "media/projects/vandalizer/Vandalizer_Varia_1.jpg",
@@ -264,9 +268,14 @@
         "youtubeId": "ZrZuJEyop2E",
         "videoSource": "",
         "banner": "",
-        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to get through the level. Every time the player dies they gain power-ups to help progress the level, at the cost of a lower final score.",
+        "companyId": "DAE",
+        "summary": "Project Kame is a platformer where you try to reach the end of the level before the timer runs out. The player has 2 different weapons they can use to navigate the stage. Every time the player dies they gain power-ups to help progress through the level, at the cost of a lower final score.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: February 2024",
                 "link": ""
@@ -312,9 +321,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/digDug/DigDug_Banner.gif",
+        "companyId": "DAE",
         "summary": "In Dig Dug you need to defeat all the monsters to be able to progress towards the next level. This is possible by either blowing them up using your air pump, or crushing them underneath a falling rock. This project is a recreation of the original game made by Namco.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -360,9 +374,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/harryPotterCoS/HarryPotterCoS_Banner.png",
+        "companyId": "DAE",
         "summary": "Harry Potter and the Chamber of Secrets is a simple demo recreation of the original game released by EA. In this game you solve simple puzzles and defeat enemies to progress through the level and reach the final star.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -401,9 +420,14 @@
         "youtubeId": "IxLCRjZQHnE",
         "videoSource": "",
         "banner": "",
+        "companyId": "DAE",
         "summary": "Medieval Madness is the first big group project I worked on. It's a 4-player couch game where every person controls a ragdoll-like character. The game is similar to Super Smash Bros. where you hit players multiple times to rack up damage. The more damage they have, the further they launch when hit. The goal is to be the last man standing by pushing every other player into spikes on the border of the map.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: January 2023",
                 "link": ""
@@ -442,9 +466,14 @@
         "youtubeId": "",
         "videoSource": "",
         "banner": "media/projects/influenceMap/InfluenceMap_Banner.gif",
+        "companyId": "DAE",
         "summary": "This project demonstrates a chasing algorithm which could be used for in-game AI. It was based on a research paper and uses an influence map at its core. This map would decide where the NPC should look when chasing the player without giving away the exact position. This would allow for more natural feeling chases.",
         "informationBits":
         [
+            {
+                "text": "School: Digital Arts and Entertainment",
+                "link": ""
+            },
             {
                 "text": "Started working: December 2022",
                 "link": ""
